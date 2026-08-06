@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CRYSS Project</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 2rem; background: #0f172a; color: #e5e7eb; }
+    a { color: #38bdf8; }
+    .card { max-width: 720px; padding: 2rem; border-radius: 0.75rem; background: #020617; box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
+    h1 { margin-top: 0; }
+    .footer { margin-top: 2rem; font-size: 0.85rem; color: #9ca3af; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>CRYSS / MultXeu</h1>
+    <p>This is the placeholder page for the CRYSS project.</p>
+    <p>Source code and documentation are hosted on GitHub under the MIT license.</p>
+    <p>
+      GitHub repo: 
+      <a href="https://github.com/idiocratease-iggy/idiocratease-iggy.github.io" target="_blank">
+        https://github.com/idiocratease-iggy/idiocratease-iggy.github.io
+      </a>
+    </p>
+  </div>
+  <div class="footer">
+    &copy; <span id="year"></span> CRYSS · MIT License
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
