@@ -15,17 +15,17 @@ Builds structured crystallization screens across solvents, salt‑formers, volum
 🔥 CRYSS – Mechanistic Modelling and Heat Maps
 The core analytical engine. Fits mechanistic purification models to real or synthetic data and extracts:
 
-Maximum achievable recovery (Rmax)
+🔹Maximum achievable recovery (Rmax)
 
-Purification limits
+🔹Purification limits
 
-Solubility behaviour across solvent/salt‑former space
+🔹Solubility behaviour across solvent/salt‑former space
 
-Deviation from ideality
+🔹Deviation from ideality
 
-Viable vs non‑viable systems
+🔹Viable vs non‑viable systems
 
-CRYSS collapses these results into heat maps that make screening interpretable at a glance.
+🔹CRYSS collapses these results into heat maps that make screening interpretable at a glance.
 
 📂 Repository Structure
 The site is deployed as a multi‑page GitHub Pages application.
@@ -46,67 +46,65 @@ A controlled environment for generating equilibrium datasets.
 
 Features:
 
-Multi‑component system definition
+🔹Multi‑component system definition
 
-Solvent and salt‑former variation
+🔹Solvent and salt‑former variation
 
-PCA‑based eutectic distortion modelling
+🔹PCA‑based eutectic distortion modelling
 
-Analytical noise injection
+🔹Analytical noise injection
 
 📊 CRYSS DOE – Experimental Design Workflow
 A guided interface for building crystallization screens.
 
 Features:
 
-Solvent and salt‑former selection
+🔹Solvent and salt‑former selection
 
-Component definition and mixture logic
+🔹Component definition and mixture logic
 
-Replicate and plate‑format handling
+🔹Replicate and plate‑format handling
 
-Live preview of experiment matrices
+🔹Live preview of experiment matrices
 
-Exportable templates (CSV or XLSX)
+🔹Exportable templates (CSV or XLSX)
 
 🔥 CRYSS – Mechanistic Modelling and Heat Maps
 The flagship module.
 
 Features:
 
-Mechanistic model fitting
+🔹Mechanistic model fitting
 
-Rmax extraction
+🔹Rmax extraction
 
-Purification limit analysis
+🔹Purification limit analysis
 
-Heat‑map generation for rapid interpretation
+🔹Heat‑map generation for rapid interpretation
 
-Support for both synthetic and experimental datasets
+🔹Support for both synthetic and experimental datasets
 
 🔌 Hardware Integration (Future Module)
 Designed for compatibility with high‑throughput crystallization hardware:
 
-Multi‑position stirrer blocks
+🔹Multi‑position stirrer blocks
 
-Automated thermal profiles
+🔹Automated equilibration via thermal cycling profiles
 
-Real‑time telemetry
+🔹Real‑time telemetry
 
-Well‑by‑well execution tracking
+🔹Well‑by‑well execution tracking
 
 🌐 Deployment
 This site is optimised for GitHub Pages.
 
 Steps:
 
-Clone the repository
+🔹Clone the repository
 
-Ensure all .html files remain in the root directory
+🔹Push to the main branch
 
-Push to the main branch
-
-Enable GitHub Pages and set the source to the root folder
+🔹Enable GitHub Pages and set the source to the root folder
 
 📜 License
 CRYSS is released under the MIT License. It is free for academic, industrial, and commercial use.
