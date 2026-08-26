@@ -30,12 +30,12 @@ CRYSS collapses these results into heat maps that make screening interpretable a
 📂 Repository Structure
 The site is deployed as a multi‑page GitHub Pages application.
 
-Code
-├── index.html      # CRYSS Home / Landing Page
-├── nodes.html      # NODES | Synthetic Data Generator
-├── doe.html        # CRYSS DOE | Experimental Design
-├── cryss.html      # CRYSS | Mechanistic Modelling & Heat Maps
-└── README.md       # Project Documentation
+├── index.html          # CRYSS Home / Landing Page
+├── nodes.html          # NODES | Synthetic Data Generator
+├── doe.html            # CRYSS DOE | Experimental Design
+├── cryss.html          # CRYSS | Mechanistic Modelling & Heat Maps
+└── README.md           # Project Documentation (this file)
+
 🧠 Module Details
 🧪 NODES – Synthetic Data Simulator
 A controlled environment for generating equilibrium datasets.
