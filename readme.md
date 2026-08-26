@@ -31,9 +31,13 @@ CRYSS collapses these results into heat maps that make screening interpretable a
 The site is deployed as a multi‑page GitHub Pages application.
 
 ├── index.html          # CRYSS Home / Landing Page
+
 ├── nodes.html          # NODES | Synthetic Data Generator
+
 ├── doe.html            # CRYSS DOE | Experimental Design
+
 ├── cryss.html          # CRYSS | Mechanistic Modelling & Heat Maps
+
 └── README.md           # Project Documentation (this file)
 
 🧠 Module Details
