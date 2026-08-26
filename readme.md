@@ -41,6 +41,7 @@ The site is deployed as a multi‑page GitHub Pages application.
 └── README.md           # Project Documentation (this file)
 
 🧠 Module Details
+
 🧪 NODES – Synthetic Data Simulator
 A controlled environment for generating equilibrium datasets.
 
