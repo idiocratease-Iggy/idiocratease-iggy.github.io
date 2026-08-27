@@ -1,331 +1,179 @@
-<!DOCTYPE html>
-
-<html lang="en" style=""><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;min-height:100vh;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"surface-container":"#eaeef2","primary-fixed-dim":"#93ccff","surface-bright":"#f6fafe","surface-dim":"#d6dade","on-secondary":"#ffffff","outline-variant":"#bfc7d2","surface-variant":"#dfe3e7","on-primary":"#ffffff","background":"#f6fafe","on-secondary-fixed":"#131b2e","on-tertiary-container":"#fffbff","primary":"#006194","on-secondary-container":"#5c647a","on-error-container":"#93000a","surface-tint":"#006398","inverse-surface":"#2c3134","hardware-active":"#22C55E","surface-container-lowest":"#ffffff","surface-white":"#FFFFFF","inverse-on-surface":"#edf1f5","error":"#ba1a1a","primary-fixed":"#cce5ff","on-surface-variant":"#3f4850","on-tertiary":"#ffffff","on-primary-container":"#fdfcff","on-tertiary-fixed":"#2f1500","secondary-fixed-dim":"#bec6e0","outline":"#707881","on-background":"#171c1f","data-ideal":"#0284C7","on-error":"#ffffff","surface-container-low":"#f0f4f8","border-subtle":"#CBD5S1","data-error":"#D97706","on-tertiary-fixed-variant":"#6e3900","on-primary-fixed-variant":"#004b73","surface-container-highest":"#dfe3e7","tertiary-fixed":"#ffdcc3","secondary":"#565e74","secondary-container":"#dae2fd","on-primary-fixed":"#001d31","primary-container":"#007bb9","inverse-primary":"#93ccff","on-surface":"#171c1f","tertiary-container":"#b15f00","tertiary-fixed-dim":"#ffb77d","surface-container-high":"#e4e9ed","on-secondary-fixed-variant":"#3f465c","secondary-fixed":"#dae2fd","surface":"#f6fafe","tertiary":"#8d4b00","error-container":"#ffdad6"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1rem","margin-desktop":"2rem","density-comfy":"1.5rem","density-tight":"0.5rem","container-max":"1440px","margin-mobile":"1rem"},"fontFamily":{"label-caps":["JetBrains Mono"],"headline-lg-mobile":["Inter"],"data-table":["Inter"],"headline-xl":["Inter"],"headline-lg":["Inter"],"body-lg":["Inter"],"body-sm":["Inter"]},"fontSize":{"label-caps":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","fontWeight":"600"}],"data-table":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-lg text-on-background"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col border-r border-outline-variant shadow-sm"><div class="p-6 mb-4 flex items-center gap-3"><img alt="cryss_fitting_routine_icon_standardized.png" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLtoQ65GP0VgmYl5KqscFSpoHrccP_Tmtqn5grsPJidJCpqbh-Kcm4QbQYM1IjJLE6wZTgF4ufwmhmLwuR_TAUb4KSRBAGJ6XZXWi2NFZFgm-b3mGWryVrvud_QEnQuNjNow6nAriy-CXduZXczWzLibsjgfscbeYQECSwo2_KF4_IEpWVpGaI1HnUbAkFXdieaZkN5IraXDeH2vlXHk_lTrMk2pS8OliGsEG8G2IhrSDpoFbHfwHA1vPZuXOi0_OhdHHo2Dodt5cHg"/><span class="font-headline-lg text-headline-lg tracking-tight text-primary">CRYSS</span></div><nav class="flex-1 px-4 space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-sm"><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="home" href="index.html"><span class="material-symbols-outlined mr-3">home</span>Home</a><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="nodes" href="nodes.html"><span class="material-symbols-outlined mr-3">hub</span>Nodes</a><a aria-current="page" class="flex items-center px-4 py-3 rounded-lg transition-all group bg-primary-container text-on-primary-container font-semibold shadow-sm" data-path="crys-doe" href="doe.html"><span class="material-symbols-outlined mr-3">experiment</span>CRYSS DoE</a><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="hardware-integration" href="hardware.html"><span class="material-symbols-outlined mr-3">settings_input_component</span>Hardware</a><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="documentation" href="#"><span class="material-symbols-outlined mr-3">menu_book</span>Documentation</a></nav><div class="p-4 border-t border-outline-variant"><div class="bg-surface-container p-3 rounded-lg flex items-center gap-3"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col"><span class="text-body-sm font-semibold text-on-surface">Lab Lead</span><span class="text-[10px] font-label-caps uppercase text-on-surface-variant">Authenticated</span></div></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl border-b border-outline-variant z-40 flex items-center justify-between px-8"><div class="flex items-center gap-2 text-on-surface-variant"><span class="material-symbols-outlined text-[20px]">science</span><span class="font-label-caps text-label-caps">System Status: Optimal</span></div><div class="flex items-center gap-4"><div class="flex gap-2"><button class="w-10 h-10 flex items-center justify-center rounded-lg hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-on-surface-variant">settings</span></button></div></div></header><main class="relative pt-16 min-h-screen bg-background"><div class="flex flex-col w-full">
-<!-- Top Navigation / Stepper -->
-<div class="w-full bg-surface-white border-b border-outline-variant px-8 py-4 flex items-center justify-between sticky top-0 z-30 shadow-sm">
-<div class="flex items-center gap-6">
-<div class="p-2 bg-surface-container-highest rounded-xl border border-primary shadow-sm">
-<img alt="CRYSS DOE logo" class="h-16 w-16 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6wgtgQDnkq3m06cGjMFmN4RTYp9UOpeyHD1CCp2LxTIdo8vjTpssEa9Bhzqqc9_kLXjNIlB2-oaGV1px_MzwjXCDXpmNdQzaYK9B_u3sot09AwWs50bLUlEJkOeS7ymM18K53rMcmfJzODuAvLY6sXF4oCaxpe4n-WotOopiKEH8rXZuJump4fszOalIiRq5c_Uw3ZyK6jW_8455o9sHDYZ7aguVD3Sy4stcYC3N77J9DuIE2eTLuUSQ6DBaHMT0J0sg"/>
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=JetBrains+Mono:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={theme:{extend:{"colors":{"on-secondary":"#ffffff","data-error":"#D97706","on-background":"#171c1f","on-primary-container":"#fdfcff","secondary":"#565e74","on-surface":"#171c1f","primary-fixed-dim":"#93ccff","surface-container-high":"#e4e9ed","background":"#f6fafe","on-secondary-container":"#5c647a","tertiary-fixed":"#ffdcc3","on-primary-fixed-variant":"#004b73","inverse-surface":"#2c3134","secondary-container":"#dae2fd","surface-variant":"#dfe3e7","surface":"#f6fafe","surface-bright":"#f6fafe","tertiary":"#8d4b00","surface-container-low":"#f0f4f8","on-primary":"#ffffff","on-tertiary-fixed-variant":"#6e3900","inverse-on-surface":"#edf1f5","on-tertiary":"#ffffff","surface-container":"#eaeef2","surface-white":"#FFFFFF","surface-container-highest":"#dfe3e7","on-primary-fixed":"#001d31","error":"#ba1a1a","data-ideal":"#0284C7","on-error":"#ffffff","surface-container-lowest":"#ffffff","error-container":"#ffdad6","on-tertiary-fixed":"#2f1500","surface-tint":"#006398","on-surface-variant":"#3f4850","on-error-container":"#93000a","secondary-fixed-dim":"#bec6e0","primary-fixed":"#cce5ff","tertiary-fixed-dim":"#ffb77d","on-secondary-fixed":"#131b2e","border-subtle":"#CBD5E1","inverse-primary":"#93ccff","on-secondary-fixed-variant":"#3f465c","outline-variant":"#bfc7d2","tertiary-container":"#b15f00","hardware-active":"#22C55E","on-tertiary-container":"#fffbff","primary-container":"#007bb9","surface-dim":"#d6dade","outline":"#707881","primary":"#006194","secondary-fixed":"#dae2fd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"container-max":"1440px","margin-desktop":"2rem","gutter":"1rem","margin-mobile":"1rem","density-comfy":"1.5rem","density-tight":"0.5rem"},"fontFamily":{"body-sm":["Inter"],"body-lg":["Inter"],"data-table":["Inter"],"headline-lg-mobile":["Inter"],"headline-lg":["Inter"],"headline-xl":["Inter"],"label-caps":["JetBrains Mono"]},"fontSize":{"body-sm":["14px",{"lineHeight":"20px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"data-table":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-lg-mobile":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-xl":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-caps":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-sm text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low border-r border-border-subtle z-50 flex flex-col"><div class="p-density-comfy flex items-center gap-3"><img alt="CRYSS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzjFej14C_vHG4WwoDZ8Y4I-0Hh7no9kJlqDgJ1E1otAopQ8nu_Gpf7YeqWBWpU0ntwAd7YaB1ivmGczlDwigWtJeNtAzm7FY5EXK7B8g4VFhndJFLwAZ42PL4IRNqQhSyYejnwmIi8AJZh0Q4L-nioSJuiYBJRIDkN0PKcEhjiLWAs9ZByUyuGyEB0Els25Q26y8v3QugUrr9CekWeU5sh3TfEy603AgJOG4-AJw0kuzgftGZzCl4ujHvFi1MPHuWaOY"><span class="font-headline-lg text-headline-lg text-primary tracking-tight">CRYSS</span></div><nav class="flex-1 px-4 py-density-tight space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold"><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all gap-3" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">home</span>Home</a><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all gap-3" data-path="nodes" href="#"><span class="material-symbols-outlined text-[20px]">hub</span>Nodes</a><a aria-current="page" class="flex items-center px-4 py-3 rounded-lg transition-all gap-3 bg-primary-container text-on-primary-container font-semibold" data-path="cryss-doe" href="#"><span class="material-symbols-outlined text-[20px]">science</span>CRYSS DoE</a><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all gap-3" data-path="hardware" href="#"><span class="material-symbols-outlined text-[20px]">settings_input_component</span>Hardware</a><a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high transition-all gap-3" data-path="documentation" href="https://github.com/idiocratease-Iggy/idiocratease-iggy.github.io/tree/root/docs"><span class="material-symbols-outlined text-[20px]">menu_book</span>Documentation</a></nav><div class="p-4 border-t border-border-subtle">
+<div class="bg-surface-container p-3 rounded-lg flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
 </div>
 <div class="flex flex-col">
+<span class="text-body-sm font-semibold text-on-surface">Lab Lead</span>
+<span class="text-[10px] font-label-caps uppercase text-on-surface-variant">Authenticated</span>
+</div>
+</div>
+</div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-md border-b border-border-subtle z-40 flex items-center justify-between px-margin-desktop"><div class="flex items-center gap-4"><div class="flex items-center gap-2 bg-hardware-active/10 px-3 py-1 rounded-full"><div class="w-2 h-2 rounded-full bg-hardware-active animate-pulse"></div><span class="text-label-caps font-label-caps text-hardware-active">System Status: Optimal</span></div></div><div class="flex items-center gap-6"><a class="flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-highest hover:bg-surface-container-high text-on-surface-variant transition-colors text-body-sm font-semibold" href="https://github.com/idiocratease-Iggy/cryss_doe" rel="noopener noreferrer" target="_blank"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>View on GitHub</a><button class="text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined">settings</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 min-h-screen bg-background"><div class="flex flex-col w-full px-margin-desktop py-8 gap-8">
+<!-- Header Section -->
+<header class="flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 bg-surface-white rounded-lg border border-border-subtle p-2 flex items-center justify-center shadow-sm">
+<img alt="CRYSS DoE Icon" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw2BXqcQXK4Z5fqxGrm0pROChDfIVx_T9O8lDK6OyWr2bUcJjueYJjJlskg0FSRzwC326WcU7KDjw7iEBz32ncxBqG5rnHRZp2YYwQL95DxMr-FgwwZfpAvftbIw35kTQPhjkmq06JoGp2R6LWXmEHQTNnS7xl5lHHfkGvGU99qeuPwVUXbL3z85z7Difedc-PXox64vjTMFFiovfhOO7rifarJhOWV-POCp4BfgRoX0Yr3cRlLfLsH72Vr7R358lcR6c">
+</div>
+<div>
+<h1 class="text-headline-xl font-headline-xl text-on-surface">Mixture-centric DoE Wizard</h1>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Design of Experiments Configuration</p>
+</div>
+</div>
 <div class="flex items-center gap-3">
-<h1 class="font-headline-lg text-headline-lg text-on-surface">Mixture-centric DoE Wizard</h1>
-<a class="flex items-center gap-1.5 px-3 py-1 bg-inverse-surface text-inverse-on-surface rounded-full text-[11px] font-label-caps hover:bg-primary transition-colors shadow-sm" href="https://github.com/idiocratease-Iggy/idiocratease-iggy.github.io/tree/root/cryss_doe" target="_blank">
-<span class="material-symbols-outlined text-[14px]">terminal</span>
-        View on GitHub
-      </a>
-</div>
-<p class="font-body-sm text-body-sm text-on-surface-variant">Configure parameters, select solvents, and preview array.</p>
+
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary text-body-sm font-body-sm font-semibold hover:bg-primary/90 transition-colors shadow-sm">
+                    Next Step
+                </button>
 </div>
 </div>
-<!-- Progress Stepper -->
-<div class="flex items-center gap-2">
-<div class="flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-full">
-<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-caps text-label-caps">1</span>
-<span class="font-body-sm text-on-surface font-semibold">Parameters</span>
-<span class="material-symbols-outlined text-outline text-[16px] mx-1">chevron_right</span>
-<span class="w-6 h-6 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-label-caps text-label-caps">2</span>
-<span class="font-body-sm text-on-surface-variant">Solvents</span>
-<span class="material-symbols-outlined text-outline text-[16px] mx-1">chevron_right</span>
-<span class="w-6 h-6 rounded-full bg-surface-variant text-on-surface-variant flex items-center justify-center font-label-caps text-label-caps">3</span>
-<span class="font-body-sm text-on-surface-variant">Array Preview</span>
+<!-- Stepper -->
+<div class="w-full bg-surface-white rounded-lg border border-border-subtle p-4 shadow-sm">
+<div class="flex items-center justify-between relative">
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-full h-0.5 bg-surface-container-highest z-0"></div>
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-1/4 h-0.5 bg-primary z-0"></div>
+<div class="relative z-10 flex flex-col items-center gap-2 bg-surface-white px-2">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-label-caps font-label-caps font-bold">1</div>
+<span class="text-label-caps font-label-caps text-primary">Components</span>
 </div>
-<button class="px-6 py-2 bg-primary text-on-primary font-label-caps text-label-caps rounded-lg hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-sm">
-        Next Step
-      </button>
+<div class="relative z-10 flex flex-col items-center gap-2 bg-surface-white px-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center text-label-caps font-label-caps font-bold">2</div>
+<span class="text-label-caps font-label-caps text-on-surface-variant">Solvents</span>
+</div>
+<div class="relative z-10 flex flex-col items-center gap-2 bg-surface-white px-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center text-label-caps font-label-caps font-bold">3</div>
+<span class="text-label-caps font-label-caps text-on-surface-variant">Salt Formers</span>
+</div>
+<div class="relative z-10 flex flex-col items-center gap-2 bg-surface-white px-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center text-label-caps font-label-caps font-bold">4</div>
+<span class="text-label-caps font-label-caps text-on-surface-variant">Parameters</span>
 </div>
 </div>
-<!-- Main Content Area -->
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter p-8">
-<!-- Left Column: Parameter Configuration & PCA -->
-<div class="lg:col-span-5 flex flex-col gap-gutter">
-<!-- Salt Formers Selection -->
-<div class="bg-surface-white rounded-xl border border-outline-variant shadow-sm overflow-hidden flex flex-col">
-<div class="p-4 border-b border-outline-variant bg-surface-container-lowest flex justify-between items-center">
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-[20px]">science</span>
-            Salt Formers
-          </h2>
-<span class="px-2 py-1 bg-surface-container text-on-surface-variant font-label-caps text-[10px] rounded uppercase tracking-widest">Optional</span>
 </div>
-<div class="p-4 bg-surface-container-low">
-<p class="font-body-sm text-on-surface-variant mb-4">Select candidate salt formers. You may skip this section if not applicable to the current experiment.</p>
-<div class="grid grid-cols-3 gap-4 h-64 overflow-y-auto pr-2 custom-scrollbar">
-<!-- Acids -->
-<div class="flex flex-col gap-2">
-<h3 class="font-label-caps text-label-caps text-on-surface mb-2 border-b border-outline-variant pb-1">Acids</h3>
-<label class="flex items-center gap-2 cursor-pointer group">
-<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
-<span class="font-body-sm text-on-surface group-hover:text-primary transition-colors">acetic acid</span>
+</header>
+<!-- Main Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+<!-- Left Column -->
+<div class="flex flex-col gap-8">
+<!-- Explore Solvent Space -->
+<div class="bg-surface-white rounded-xl border border-border-subtle p-density-comfy shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-4 border-b border-border-subtle pb-4">
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Explore Solvent Space</h2>
+<span class="px-2 py-1 bg-surface-container-low text-on-surface-variant text-label-caps font-label-caps rounded">PCA Projection</span>
+</div>
+<div class="w-full bg-inverse-surface rounded-lg overflow-hidden border border-border-subtle flex-1 flex items-center justify-center min-h-[300px]">
+<img alt="PCA plot visualization of solvent space" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwMGja6g7pxMMori681QXos5H7ads2sK3irOg63eUubHVGsh2YqWtm2HNMXGNKd0Yg0OUyLLYoWAd8VCEmmHqOMl7YtSt1HhSshvG2ZfO12jPaRqUvD69LHM-_wZE2MtB4EVntIQVMFXjqPakv2_IORNvVPf9_lpyfhrFPMDXaBeQXBmfFojc1BzwBVxp2mSMINWjQ6nCqRDxQcZAnR-xDca2AH09f01fhiuu2bC0YAI9BEkFxH6sH05bSeH_CxZ0GFOU">
+</div>
+<div class="mt-4 flex gap-4 text-data-table font-data-table text-on-surface-variant">
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-data-ideal"></div> Selected Set</div>
+<div class="flex items-center gap-2"><div class="w-3 h-3 rounded-full bg-surface-variant"></div> Available Space</div>
+</div>
+</div>
+<!-- Salt Formers -->
+<div class="bg-surface-white rounded-xl border border-border-subtle p-density-comfy shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-4 border-b border-border-subtle pb-4">
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Salt Formers <span class="text-on-surface-variant text-body-sm font-body-sm font-normal">(Optional)</span></h2>
+<span class="px-2 py-1 bg-surface-container-low text-on-surface-variant text-label-caps font-label-caps rounded">Multi-Select</span>
+</div>
+<div class="w-full rounded-lg overflow-hidden border border-border-subtle bg-surface-container-lowest">
+<img alt="Multi-select matrix for salt formers" class="w-full h-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb9VTJ121yXc1ZYuEgvA8FvPQmyLlo7W4XDIS1eizQxFDiZSzkiqa6ei0hqYcogPbXdZmqkJV_W2CkMuyFCgnpsXmu0C2UrZtVL0OkbeoXCm3p3NfWHZZKigqHIDftg4GfXwIoKp7VOHOeGtXeMLk-fjj3FwUswrH6mgYZYf5RKHCmzy9sjYpd_y974orR_0KmdL8X1_3CDNtmfvkPM6eJ_yFL_W6JpqAjJ5Fwlj7rNL4LOCp91dOBbvpePPJ5BNFzCBs">
+</div>
+</div>
+</div>
+<!-- Right Column -->
+<div class="flex flex-col gap-8">
+<!-- Plate Format -->
+<div class="bg-surface-white rounded-xl border border-border-subtle p-density-comfy shadow-sm flex flex-col">
+<div class="flex items-center justify-between mb-4 border-b border-border-subtle pb-4">
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Plate Format</h2>
+<span class="px-2 py-1 bg-surface-container-low text-on-surface-variant text-label-caps font-label-caps rounded">Configuration</span>
+</div>
+<div class="flex flex-col gap-6">
+<div class="w-full rounded-lg overflow-hidden border border-border-subtle bg-surface-container-lowest">
+<img alt="Interactive grid graphic for plate format" class="w-full h-auto object-cover max-h-[300px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpdslCfUQdoYYkVOKUj1BBZKZR21O0rDJIX3p0R-l_jjt4UKDi-wvHhV9jthkZ9oeUoCUQFsYLK7BtVRCCQPU1kJix9OXpeu3qeR3tOPu5O1TZSFE71xmsjgD5uDOVf-eMvTs-Fof85-Nb-pGbTnuaqau17cA-GJndvhfVHjGtYlQxciP0U275Uk-OHdVEc8W3HBVwmw2DfCUKhL5lUAXObg6PFbXG6d-rAHpLuAy1LXBqvIvkKrsZH_Z1zU90AGBfxQA">
+</div>
+<div class="flex flex-col gap-3 bg-surface-container-low p-4 rounded-lg">
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="relative flex items-center justify-center w-5 h-5 border-2 border-primary rounded bg-primary">
+<span class="material-symbols-outlined text-[16px] text-on-primary">check</span>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface group-hover:text-primary transition-colors">Randomize experiment order</span>
 </label>
-<label class="flex items-center gap-2 cursor-pointer group">
-<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
-<span class="font-body-sm text-on-surface group-hover:text-primary transition-colors">benzenesulphonic acid</span>
-</label>
-<label class="flex items-center gap-2 cursor-pointer group">
-<input checked="" class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
-<span class="font-body-sm text-on-surface group-hover:text-primary transition-colors font-medium">benzoic acid</span>
-</label>
-<label class="flex items-center gap-2 cursor-pointer group">
-<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
-<span class="font-body-sm text-on-surface group-hover:text-primary transition-colors">chloroacetic acid</span>
-</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<div class="relative flex items-center justify-center w-5 h-5 border-2 border-outline rounded bg-surface-white">
 </div>
-<!-- Chiral Acids -->
-<div class="flex flex-col gap-2 border-l border-outline-variant pl-4">
-<h3 class="font-label-caps text-label-caps text-on-surface mb-2 border-b border-outline-variant pb-1">Chiral Acids</h3>
-<label class="flex items-center gap-2 cursor-pointer group">
-<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
-<span class="font-body-sm text-on-surface group-hover:text-primary transition-colors truncate" title="(-)-di-o,o'-dibenzoyl-L-tartaric acid">(-)-di-o,o'-dibenzoyl-L-tartaric...</span>
-</label>
-<label class="flex items-center gap-2 cursor-pointer group">
-<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
-<span class="font-body-sm text-on-surface group-hover:text-primary transition-colors truncate">(-)-menthoxy acetic acid</span>
-</label>
-<label class="flex items-center gap-2 cursor-pointer group">
-<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
-<span class="font-body-sm text-on-surface group-hover:text-primary transition-colors truncate">1-(R)-camphanic acid</span>
-</label>
-</div>
-<!-- Bases -->
-<div class="flex flex-col gap-2 border-l border-outline-variant pl-4">
-<h3 class="font-label-caps text-label-caps text-on-surface mb-2 border-b border-outline-variant pb-1">Bases</h3>
-<label class="flex items-center gap-2 cursor-pointer group">
-<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
-<span class="font-body-sm text-on-surface group-hover:text-primary transition-colors">ammonia</span>
-</label>
-<label class="flex items-center gap-2 cursor-pointer group">
-<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
-<span class="font-body-sm text-on-surface group-hover:text-primary transition-colors">cesium hydroxide</span>
-</label>
-<label class="flex items-center gap-2 cursor-pointer group">
-<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
-<span class="font-body-sm text-on-surface group-hover:text-primary transition-colors">dodecylamine</span>
-</label>
-</div>
-</div>
-<div class="mt-4 pt-4 border-t border-outline-variant">
-<label class="flex items-center gap-2 cursor-pointer group">
-<input checked="" class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
-<span class="font-body-sm text-on-surface font-medium">Include a salt-free set</span>
+<span class="text-body-sm font-body-sm text-on-surface group-hover:text-primary transition-colors">Fill up to full plates (Blank wells)</span>
 </label>
 </div>
 </div>
 </div>
-<!-- Solvent PCA Tool -->
-<div class="bg-surface-white rounded-xl border border-outline-variant shadow-sm overflow-hidden flex flex-col flex-1">
-<div class="p-4 border-b border-outline-variant flex justify-between items-center">
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-[20px]">scatter_plot</span>
-            Explore Solvent Space
-          </h2>
-<div class="flex gap-2">
-<button class="w-8 h-8 flex items-center justify-center rounded hover:bg-surface-container-high transition-colors text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">zoom_in</span></button>
-<button class="w-8 h-8 flex items-center justify-center rounded hover:bg-surface-container-high transition-colors text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">pan_tool</span></button>
+<!-- Live Array Preview -->
+<div class="bg-surface-white rounded-xl border border-border-subtle shadow-sm flex flex-col flex-1 overflow-hidden">
+<div class="p-density-comfy border-b border-border-subtle bg-surface-container-lowest flex items-center justify-between">
+<div>
+<h2 class="text-headline-lg font-headline-lg text-on-surface">Live Array Preview</h2>
+<p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Generated experimental array</p>
 </div>
+<button class="flex items-center gap-2 px-3 py-1.5 rounded bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors border border-border-subtle text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[18px]">download</span>
+                        Download Excel
+                    </button>
 </div>
-<div class="p-4 bg-surface-container-lowest flex-1 flex flex-col">
-<p class="font-body-sm text-on-surface-variant mb-4 leading-relaxed">
-            Use PCA to select solvents for experimental diversity. Exotic solvents shown in <span class="text-data-error font-medium">Orange</span>. Typical selections in <span class="text-error font-medium">Red</span>.
-          </p>
-<div class="relative w-full h-64 bg-inverse-surface rounded-lg border border-outline flex-1 overflow-hidden group">
-<!-- Simulated PCA Plot via inline CSS/SVG for structural representation -->
-<div class="absolute inset-0 grid grid-cols-6 grid-rows-6 opacity-20 pointer-events-none">
-<div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-b border-outline-variant"></div>
-<div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-b border-outline-variant"></div>
-<div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-b border-outline-variant"></div>
-<div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-b border-outline-variant"></div>
-<div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-r border-b border-outline-variant"></div><div class="border-b border-outline-variant"></div>
-<div class="border-r border-outline-variant"></div><div class="border-r border-outline-variant"></div><div class="border-r border-outline-variant"></div><div class="border-r border-outline-variant"></div><div class="border-r border-outline-variant"></div><div></div>
+<div class="p-4 bg-surface-container-lowest border-b border-border-subtle">
+<img alt="Example Excel file output format" class="w-full h-auto rounded border border-border-subtle opacity-90 mix-blend-multiply" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc-35gNCIvwymRqY5T9yPKUQPPgmCO1PwakR9MEvYFOM22O8v6CeyW56fnllPBzgvlrj7CSK3XKffVMU8VVfOFJrPrrrwsyvEQjiEkkQKgnLMLWwv3kNlK9zcqVOlTwWzCQWXpVfr_kk5_gGw-OaTwgmVmFFbqwpC6gRCU24Z2-g4eQJANLjviOxyVvqBN_NEIcgm1l1Ac6yUyYHSQVNVwlpj9ZBsy-qLezxbMviS87ty7FGliNf25cSKc-co2m2XfIME">
 </div>
-<!-- Axes Labels -->
-<div class="absolute bottom-2 left-0 w-full text-center font-label-caps text-[10px] text-surface-variant opacity-70">Principal Component 1</div>
-<div class="absolute top-0 left-2 h-full flex items-center font-label-caps text-[10px] text-surface-variant opacity-70 [writing-mode:vertical-rl] rotate-180">Principal Component 2</div>
-<!-- Scatter Points -->
-<svg class="absolute inset-0 w-full h-full p-4" preserveaspectratio="none" viewbox="0 0 100 100">
-<!-- Cluster 1 -->
-<circle cx="20" cy="80" fill="none" r="1.5" stroke="#93ccff" stroke-width="0.5"></circle>
-<circle cx="25" cy="75" fill="none" r="1.5" stroke="#93ccff" stroke-width="0.5"></circle>
-<circle cx="22" cy="70" fill="none" r="1.5" stroke="#93ccff" stroke-width="0.5"></circle>
-<!-- Selected Typical -->
-<circle cx="30" cy="65" fill="#ba1a1a" r="2"></circle>
-<circle cx="45" cy="60" fill="#ba1a1a" r="2"></circle>
-<!-- Exotic -->
-<circle class="cursor-pointer hover:stroke-white hover:stroke-1 transition-all" cx="35" cy="35" fill="#D97706" r="4"></circle>
-<!-- Tooltip anchor -->
-<g class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-<line stroke="#ffffff" stroke-dasharray="2 2" stroke-width="0.5" x1="35" x2="45" y1="35" y2="45"></line>
-<rect fill="#2c3134" height="20" rx="2" stroke="#707881" stroke-width="0.5" width="40" x="45" y="45"></rect>
-<text fill="#ffffff" font-family="JetBrains Mono" font-size="4" x="47" y="52">x: -1.52, y: 3.45</text>
-<text fill="#93ccff" font-family="Inter" font-size="4" x="47" y="60">dimethyl disulfide</text>
-</g>
-<!-- Background points -->
-<circle cx="50" cy="70" fill="none" opacity="0.6" r="1.5" stroke="#93ccff" stroke-width="0.5"></circle>
-<circle cx="60" cy="65" fill="none" opacity="0.6" r="1.5" stroke="#93ccff" stroke-width="0.5"></circle>
-<circle cx="75" cy="50" fill="none" opacity="0.6" r="1.5" stroke="#93ccff" stroke-width="0.5"></circle>
-<circle cx="80" cy="40" fill="none" opacity="0.6" r="1.5" stroke="#93ccff" stroke-width="0.5"></circle>
-</svg>
-</div>
-<!-- Y-Axis selector -->
-<div class="mt-4 flex gap-4 border-t border-outline-variant pt-4">
-<span class="font-label-caps text-label-caps text-on-surface-variant flex items-center">Y Axis:</span>
-<label class="flex items-center gap-2 cursor-pointer">
-<input checked="" class="text-primary focus:ring-primary" name="y-axis" type="radio"/>
-<span class="font-body-sm text-on-surface">PC2</span>
-</label>
-<label class="flex items-center gap-2 cursor-pointer">
-<input class="text-primary focus:ring-primary" name="y-axis" type="radio"/>
-<span class="font-body-sm text-on-surface">PC3</span>
-</label>
-</div>
-</div>
-</div>
-</div>
-<!-- Right Column: Live Preview & Settings -->
-<div class="lg:col-span-7 flex flex-col gap-gutter">
-<!-- Plate Format Configuration -->
-<div class="bg-surface-white rounded-xl border border-outline-variant shadow-sm p-4 flex gap-6">
-<div class="flex-1">
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-4">Select Plate Format</h2>
-<div class="space-y-3">
-<label class="flex items-center gap-2 cursor-pointer group bg-surface-container-low p-2 rounded-lg border border-transparent hover:border-outline-variant transition-all">
-<input class="text-primary focus:ring-primary" name="plate-format" type="radio"/>
-<span class="font-body-sm text-on-surface">4 × 3 <span class="text-on-surface-variant">(12 wells)</span></span>
-</label>
-<label class="flex items-center gap-2 cursor-pointer group bg-surface-container-highest p-2 rounded-lg border border-primary shadow-sm">
-<input checked="" class="text-primary focus:ring-primary" name="plate-format" type="radio"/>
-<span class="font-body-sm text-on-surface font-medium">6 × 4 <span class="text-primary-container">(24 wells)</span></span>
-</label>
-<label class="flex items-center gap-2 cursor-pointer group bg-surface-container-low p-2 rounded-lg border border-transparent hover:border-outline-variant transition-all">
-<input class="text-primary focus:ring-primary" name="plate-format" type="radio"/>
-<span class="font-body-sm text-on-surface">8 × 6 <span class="text-on-surface-variant">(48 wells)</span></span>
-</label>
-</div>
-<div class="mt-4 pt-4 border-t border-outline-variant space-y-2">
-<label class="flex items-center gap-2 cursor-pointer">
-<input checked="" class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
-<span class="font-body-sm text-on-surface">Randomize experiment order</span>
-</label>
-<label class="flex items-center gap-2 cursor-pointer">
-<input class="w-4 h-4 rounded border-outline-variant text-primary focus:ring-primary" type="checkbox"/>
-<span class="font-body-sm text-on-surface">Fill up to full plates</span>
-</label>
-</div>
-</div>
-<!-- Visual Plate Map -->
-<div class="flex-1 bg-inverse-surface rounded-lg p-4 flex items-center justify-center border border-outline relative">
-<div class="grid grid-cols-6 gap-2">
-<!-- Row A -->
-<div class="w-6 h-6 rounded-full border border-surface-variant flex items-center justify-center text-[8px] text-surface-variant font-label-caps">A1</div>
-<div class="w-6 h-6 rounded-full border border-surface-variant bg-primary/20 flex items-center justify-center text-[8px] text-surface-variant font-label-caps">A2</div>
-<div class="w-6 h-6 rounded-full border border-surface-variant flex items-center justify-center text-[8px] text-surface-variant font-label-caps">A3</div>
-<div class="w-6 h-6 rounded-full border border-surface-variant bg-error/20 flex items-center justify-center text-[8px] text-surface-variant font-label-caps">A4</div>
-<div class="w-6 h-6 rounded-full border border-surface-variant flex items-center justify-center text-[8px] text-surface-variant font-label-caps">A5</div>
-<div class="w-6 h-6 rounded-full border border-surface-variant flex items-center justify-center text-[8px] text-surface-variant font-label-caps">A6</div>
-<!-- Row B -->
-<div class="w-6 h-6 rounded-full border border-surface-variant flex items-center justify-center text-[8px] text-surface-variant font-label-caps">B1</div>
-<div class="w-6 h-6 rounded-full border border-surface-variant flex items-center justify-center text-[8px] text-surface-variant font-label-caps">B2</div>
-<div class="w-6 h-6 rounded-full border border-surface-variant bg-primary/20 flex items-center justify-center text-[8px] text-surface-variant font-label-caps">B3</div>
-<div class="w-6 h-6 rounded-full border border-surface-variant flex items-center justify-center text-[8px] text-surface-variant font-label-caps">B4</div>
-<div class="w-6 h-6 rounded-full border border-surface-variant flex items-center justify-center text-[8px] text-surface-variant font-label-caps">B5</div>
-<div class="w-6 h-6 rounded-full border border-surface-variant flex items-center justify-center text-[8px] text-surface-variant font-label-caps">B6</div>
-<!-- Row C -->
-<div class="w-6 h-6 rounded-full border border-surface-variant flex items-center justify-center text-[8px] text-surface-variant font-label-caps">C1</div>
-<div class="w-6 h-6 rounded-full border border-surface-variant flex items-center justify-center text-[8px] text-surface-variant font-label-caps">C2</div>
-<div class="w-6 h-6 rounded-full border border-surface-variant flex items-center justify-center text-[8px] text-surface-variant font-label-caps">C3</div>
-<div class="w-6 h-6 rounded-full border border-surface-variant bg-primary/20 flex items-center justify-center text-[8px] text-surface-variant font-label-caps">C4</div>
-<div class="w-6 h-6 rounded-full border border-surface-variant flex items-center justify-center text-[8px] text-surface-variant font-label-caps">C5</div>
-<div class="w-6 h-6 rounded-full border border-surface-variant flex items-center justify-center text-[8px] text-surface-variant font-label-caps">C6</div>
-</div>
-<!-- Decorative legend -->
-<div class="absolute bottom-2 right-2 flex gap-2">
-<div class="flex items-center gap-1"><div class="w-2 h-2 rounded-full bg-primary/20 border border-surface-variant"></div><span class="text-[8px] text-surface-variant font-label-caps">Selected</span></div>
-<div class="flex items-center gap-1"><div class="w-2 h-2 rounded-full bg-error/20 border border-surface-variant"></div><span class="text-[8px] text-surface-variant font-label-caps">Control</span></div>
-</div>
-</div>
-</div>
-<!-- Live Array Preview Data Table -->
-<div class="bg-surface-white rounded-xl border border-outline-variant shadow-sm overflow-hidden flex-1 flex flex-col">
-<div class="p-4 border-b border-outline-variant flex justify-between items-center bg-surface-container-lowest">
-<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface flex items-center gap-2">
-<span class="material-symbols-outlined text-primary text-[20px]">table_chart</span>
-            Live Array Preview
-          </h2>
-<button class="flex items-center gap-2 px-3 py-1.5 rounded bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-caps text-label-caps transition-colors border border-outline-variant">
-<span class="material-symbols-outlined text-[16px]">download</span> Export CSV
-          </button>
-</div>
-<div class="overflow-x-auto flex-1 bg-surface-container-lowest">
-<table class="w-full text-left border-collapse min-w-[800px]">
-<thead class="bg-surface-container sticky top-0 shadow-sm z-10">
-<tr>
-<th class="p-2 font-label-caps text-label-caps text-on-surface border-b border-r border-outline-variant w-16">ID</th>
-<th class="p-2 font-label-caps text-label-caps text-on-surface border-b border-r border-outline-variant">Well</th>
-<th class="p-2 font-label-caps text-label-caps text-on-surface border-b border-r border-outline-variant">Solvent</th>
-<th class="p-2 font-label-caps text-label-caps text-on-surface border-b border-r border-outline-variant">Salt Former</th>
-<th class="p-2 font-label-caps text-label-caps text-on-surface border-b border-outline-variant">Status</th>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-label-caps font-label-caps text-on-surface-variant uppercase tracking-wider">
+<th class="px-4 py-3 border-b border-border-subtle">Exp ID</th>
+<th class="px-4 py-3 border-b border-border-subtle">Well</th>
+<th class="px-4 py-3 border-b border-border-subtle">Solvent Sys</th>
+<th class="px-4 py-3 border-b border-border-subtle">Salt Former</th>
+<th class="px-4 py-3 border-b border-border-subtle text-right">Vol (µL)</th>
 </tr>
 </thead>
-<tbody class="font-data-table text-data-table text-on-surface divide-y divide-outline-variant">
-<tr class="hover:bg-surface-container-low transition-colors">
-<td class="p-2 border-r border-outline-variant font-mono text-primary">EXP001</td>
-<td class="p-2 border-r border-outline-variant">Plate1.A1</td>
-<td class="p-2 border-r border-outline-variant">heptane</td>
-<td class="p-2 border-r border-outline-variant text-on-surface-variant italic">-</td>
-<td class="p-2"><span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-[10px] font-label-caps text-on-surface-variant uppercase">Base</span></td>
+<tbody class="text-data-table font-data-table text-on-surface divide-y divide-border-subtle">
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="px-4 py-2 font-label-caps text-primary">CRY-001</td>
+<td class="px-4 py-2 font-label-caps">A1</td>
+<td class="px-4 py-2 truncate max-w-[120px]">EtOH/H2O (80:20)</td>
+<td class="px-4 py-2">Succinic Acid</td>
+<td class="px-4 py-2 font-label-caps text-right">500.0</td>
 </tr>
-<tr class="hover:bg-surface-container-low transition-colors">
-<td class="p-2 border-r border-outline-variant font-mono text-primary">EXP002</td>
-<td class="p-2 border-r border-outline-variant">Plate1.A2</td>
-<td class="p-2 border-r border-outline-variant">heptane</td>
-<td class="p-2 border-r border-outline-variant">acetic acid</td>
-<td class="p-2"><span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-[10px] font-label-caps text-primary uppercase">Modified</span></td>
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="px-4 py-2 font-label-caps text-primary">CRY-002</td>
+<td class="px-4 py-2 font-label-caps">A2</td>
+<td class="px-4 py-2 truncate max-w-[120px]">MeOH</td>
+<td class="px-4 py-2">Malic Acid</td>
+<td class="px-4 py-2 font-label-caps text-right">500.0</td>
 </tr>
-<tr class="hover:bg-surface-container-low transition-colors">
-<td class="p-2 border-r border-outline-variant font-mono text-primary">EXP003</td>
-<td class="p-2 border-r border-outline-variant">Plate1.A3</td>
-<td class="p-2 border-r border-outline-variant">heptane</td>
-<td class="p-2 border-r border-outline-variant">benzoic acid</td>
-<td class="p-2"><span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-[10px] font-label-caps text-primary uppercase">Modified</span></td>
+<tr class="hover:bg-surface-container-lowest transition-colors">
+<td class="px-4 py-2 font-label-caps text-primary">CRY-003</td>
+<td class="px-4 py-2 font-label-caps">A3</td>
+<td class="px-4 py-2 truncate max-w-[120px]">IPA/Hep (50:50)</td>
+<td class="px-4 py-2 text-on-surface-variant italic">None</td>
+<td class="px-4 py-2 font-label-caps text-right">500.0</td>
 </tr>
-<tr class="hover:bg-surface-container-low transition-colors">
-<td class="p-2 border-r border-outline-variant font-mono text-primary">EXP004</td>
-<td class="p-2 border-r border-outline-variant">Plate1.A4</td>
-<td class="p-2 border-r border-outline-variant">2-butanol</td>
-<td class="p-2 border-r border-outline-variant text-on-surface-variant italic">-</td>
-<td class="p-2"><span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-[10px] font-label-caps text-on-surface-variant uppercase">Base</span></td>
-</tr>
-<tr class="hover:bg-surface-container-low transition-colors">
-<td class="p-2 border-r border-outline-variant font-mono text-primary">EXP005</td>
-<td class="p-2 border-r border-outline-variant">Plate1.A5</td>
-<td class="p-2 border-r border-outline-variant">2-butanol</td>
-<td class="p-2 border-r border-outline-variant">acetic acid</td>
-<td class="p-2"><span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-[10px] font-label-caps text-primary uppercase">Modified</span></td>
-</tr>
-<tr class="hover:bg-surface-container-low transition-colors">
-<td class="p-2 border-r border-outline-variant font-mono text-primary">EXP006</td>
-<td class="p-2 border-r border-outline-variant">Plate1.A6</td>
-<td class="p-2 border-r border-outline-variant">acetone</td>
-<td class="p-2 border-r border-outline-variant text-on-surface-variant italic">-</td>
-<td class="p-2"><span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-[10px] font-label-caps text-on-surface-variant uppercase">Base</span></td>
-</tr>
-<tr class="hover:bg-surface-container-low transition-colors bg-error-container/10">
-<td class="p-2 border-r border-outline-variant font-mono text-error">EXP007</td>
-<td class="p-2 border-r border-outline-variant text-error">Plate1.B1</td>
-<td class="p-2 border-r border-outline-variant text-error">acetone</td>
-<td class="p-2 border-r border-outline-variant text-error">benzoic acid</td>
-<td class="p-2"><span class="px-2 py-0.5 rounded-full bg-error-container text-[10px] font-label-caps text-on-error-container uppercase flex items-center gap-1 w-max"><span class="material-symbols-outlined text-[12px]">warning</span> Conflict</span></td>
+<tr class="hover:bg-surface-container-lowest transition-colors bg-surface-container-low/30">
+<td class="px-4 py-2 font-label-caps text-on-surface-variant">...</td>
+<td class="px-4 py-2 font-label-caps text-on-surface-variant">...</td>
+<td class="px-4 py-2 text-on-surface-variant">...</td>
+<td class="px-4 py-2 text-on-surface-variant">...</td>
+<td class="px-4 py-2 font-label-caps text-right text-on-surface-variant">...</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div class="p-2 border-t border-outline-variant bg-surface-container-low flex justify-between items-center text-[11px] font-label-caps text-on-surface-variant">
-<span class="">Showing 7 of 24 generated experiments</span>
-<span class="">Est. Run Time: 4h 30m</span>
-</div>
+<div class="p-3 bg-surface-container text-center text-label-caps font-label-caps text-on-surface-variant border-t border-border-subtle">
+                    Showing 3 of 96 Generated Experiments
+                </div>
 </div>
 </div>
 </div>
 </div></main></div>
+
 </body></html>
