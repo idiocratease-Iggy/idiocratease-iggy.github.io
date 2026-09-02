@@ -1,213 +1,9 @@
-<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">
-  tailwind.config = {
-    darkMode: "class",
-    theme: {
-      extend: {
-        "colors": {
-                "outline": "#707881",
-                "on-tertiary-container": "#fffbff",
-                "error-container": "#ffdad6",
-                "on-surface": "#171c1f",
-                "outline-variant": "#bfc7d2",
-                "background": "#f6fafe",
-                "surface-container-lowest": "#ffffff",
-                "on-background": "#171c1f",
-                "on-error": "#ffffff",
-                "on-secondary-fixed": "#131b2e",
-                "surface-container": "#eaeef2",
-                "secondary-container": "#dae2fd",
-                "data-ideal": "#0284C7",
-                "surface-container-highest": "#dfe3e7",
-                "secondary-fixed": "#dae2fd",
-                "tertiary-fixed": "#ffdcc3",
-                "on-secondary-fixed-variant": "#3f465c",
-                "secondary-fixed-dim": "#bec6e0",
-                "surface": "#f6fafe",
-                "hardware-active": "#22C55E",
-                "tertiary-fixed-dim": "#ffb77d",
-                "surface-white": "#FFFFFF",
-                "tertiary-container": "#b15f00",
-                "primary-fixed-dim": "#93ccff",
-                "tertiary": "#8d4b00",
-                "secondary": "#565e74",
-                "on-surface-variant": "#3f4850",
-                "on-tertiary-fixed": "#2f1500",
-                "border-subtle": "#CBD5E1",
-                "primary-fixed": "#cce5ff",
-                "primary": "#006194",
-                "on-primary-container": "#fdfcff",
-                "surface-tint": "#006398",
-                "inverse-surface": "#2c3134",
-                "on-secondary-container": "#5c647a",
-                "on-tertiary-fixed-variant": "#6e3900",
-                "primary-container": "#007bb9",
-                "on-secondary": "#ffffff",
-                "inverse-on-surface": "#edf1f5",
-                "surface-bright": "#f6fafe",
-                "surface-dim": "#d6dade",
-                "data-error": "#D97706",
-                "on-primary-fixed": "#001d31",
-                "on-error-container": "#93000a",
-                "on-primary": "#ffffff",
-                "surface-container-high": "#e4e9ed",
-                "surface-container-low": "#f0f4f8",
-                "on-primary-fixed-variant": "#004b73",
-                "error": "#ba1a1a",
-                "inverse-primary": "#93ccff",
-                "surface-variant": "#dfe3e7",
-                "on-tertiary": "#ffffff"
-        },
-        "borderRadius": {
-                "DEFAULT": "0.25rem",
-                "lg": "0.5rem",
-                "xl": "0.75rem",
-                "full": "9999px"
-        },
-        "spacing": {
-                "density-comfy": "1.5rem",
-                "margin-mobile": "1rem",
-                "container-max": "1440px",
-                "margin-desktop": "2rem",
-                "density-tight": "0.5rem",
-                "gutter": "1rem",
-                "lg": "24px",
-                "xs": "4px",
-                "md": "16px",
-                "unit": "4px",
-                "xl": "32px",
-                "sm": "8px"
-        },
-        "fontFamily": {
-                "body-lg": [
-                        "Inter"
-                ],
-                "headline-xl": [
-                        "Inter"
-                ],
-                "label-caps": [
-                        "JetBrains Mono"
-                ],
-                "data-table": [
-                        "Inter"
-                ],
-                "body-sm": [
-                        "Inter"
-                ],
-                "headline-lg-mobile": [
-                        "Inter"
-                ],
-                "headline-lg": [
-                        "Inter"
-                ],
-                "headline-md": ["Inter"],
-                "body-md": ["Inter"],
-                "code-label": ["JetBrains Mono"],
-                "code-data": ["JetBrains Mono"],
-                "headline-sm": ["Inter"]
-        },
-        "fontSize": {
-                "body-lg": [
-                        "16px",
-                        {
-                                "lineHeight": "24px",
-                                "fontWeight": "400"
-                        }
-                ],
-                "headline-xl": [
-                        "36px",
-                        {
-                                "lineHeight": "44px",
-                                "letterSpacing": "-0.02em",
-                                "fontWeight": "700"
-                        }
-                ],
-                "label-caps": [
-                        "12px",
-                        {
-                                "lineHeight": "16px",
-                                "letterSpacing": "0.05em",
-                                "fontWeight": "600"
-                        }
-                ],
-                "data-table": [
-                        "13px",
-                        {
-                                "lineHeight": "18px",
-                                "fontWeight": "400"
-                        }
-                ],
-                "body-sm": [
-                        "14px",
-                        {
-                                "lineHeight": "20px",
-                                "fontWeight": "400"
-                        }
-                ],
-                "headline-lg-mobile": [
-                        "20px",
-                        {
-                                "lineHeight": "28px",
-                                "fontWeight": "600"
-                        }
-                ],
-                "headline-lg": [
-                        "24px",
-                        {
-                                "lineHeight": "32px",
-                                "fontWeight": "600"
-                        }
-                ],
-                "headline-md": ["24px", {"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],
-                "body-md": ["14px", {"lineHeight":"20px","fontWeight":"400"}],
-                "code-label": ["12px", {"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],
-                "code-data": ["13px", {"lineHeight":"20px","fontWeight":"400"}],
-                "headline-sm": ["18px", {"lineHeight":"24px","fontWeight":"600"}]
-        }
-},
-    },
-  }
-</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"></head><body class="bg-background font-body-md text-on-surface">
-<aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col border-r border-slate-200 shadow-sm">
-<div class="p-6 mb-4 flex items-center gap-3">
-<img alt="CRYSS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRL8VxNzyzVoaWFWKcZ3mBiBv5UE0HYCXHnWxBTVOLS9cbRqGsYl66Ej9YF8iFjSoL8oXfzM67SoC4cNBBF50I6Iom4hrC8NRPxjT6DEjLKhUZgc6nQL2CcYCYem9YeRUxE0Kkjvr-HAw-KJ1uQBhzKt_wrz5Af-r73gkdp_yqx7tJtve3rp9-477ZavGADPDti60DZiMUbETwIVQoYQ_PjknAT-6-dRqUnhDeQYRKW1nAJJmu36_-AY7rtFwv0Z2P4sk">
-<span class="font-headline-lg text-headline-lg tracking-tight text-primary">CRYSS</span>
-</div>
-<nav class="flex-1 px-4 space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-sm rounded-lg">
-<a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="home" href="index.html">
-<span class="material-symbols-outlined mr-3">home</span>
-        Home
-      </a>
-<a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="nodes" href="nodes.html">
-<span class="material-symbols-outlined mr-3">hub</span>
-        Nodes
-      </a>
-<a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="crys-doe" href="doe.html">
-<span class="material-symbols-outlined mr-3">experiment</span>
-        CRYSS DoE
-      </a>
-<a aria-current="page" class="flex items-center px-4 py-3 rounded-lg transition-all group bg-primary-container text-on-primary-container font-semibold shadow-sm" data-path="hardware-integration" href="hardware.html">
-<span class="material-symbols-outlined mr-3">settings_input_component</span>
-        Hardware
-      </a>
-<a class="flex items-center px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="documentation" href="https://github.com/idiocratease-Iggy/idiocratease-iggy.github.io/tree/root/docs">
-<span class="material-symbols-outlined mr-3">menu_book</span>
-        Documentation
-      </a>
-</nav>
-<div class="p-4 border-t border-slate-200">
-<div class="bg-surface-container p-3 rounded-lg flex items-center gap-3">
-<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-<span class="material-symbols-outlined text-on-primary text-[18px]">person</span>
-</div>
-<div class="flex flex-col">
-<span class="text-body-sm font-semibold text-on-surface">Lab Lead</span>
-<span class="text-[10px] font-label-caps uppercase text-on-surface-variant">Authenticated</span>
-</div>
-</div>
-</div>
-</aside>
-<div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-white/80 backdrop-blur-xl border-b border-slate-200 z-40 flex items-center justify-between px-8"><div class="flex items-center gap-md"><div class="flex items-center gap-sm px-sm py-xs bg-surface-container-high rounded border border-outline-variant"><div class="w-2 h-2 rounded-full bg-primary"></div><span class="font-code-label text-code-label text-on-surface uppercase">Node: Central-01</span></div></div><div class="flex items-center gap-lg"><div class="flex items-center gap-sm"><span class="material-symbols-outlined text-on-surface-variant text-[20px] cursor-pointer hover:text-primary transition-colors">search</span><span class="material-symbols-outlined text-on-surface-variant text-[20px] cursor-pointer hover:text-primary transition-colors">notifications</span><span class="material-symbols-outlined text-on-surface-variant text-[20px] cursor-pointer hover:text-primary transition-colors">help</span></div></div></header><main class="relative pt-16 min-h-screen bg-background"><div class="flex flex-col w-full min-h-[calc(100vh-64px)] p-lg gap-lg">
+<!DOCTYPE html><html lang="en" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-secondary-fixed":"#171c1f","on-primary-fixed":"#001d31","inverse-on-surface":"#eef0ff","surface-tint":"#006398","primary-fixed":"#cce5ff","secondary":"#5a5f62","inverse-primary":"#93ccff","surface":"#faf8ff","tertiary-container":"#ac6200","secondary-container":"#dce0e4","surface-dim":"#d2d9f4","on-tertiary-container":"#fffbff","primary":"#006194","on-secondary":"#ffffff","secondary-fixed":"#dfe3e7","tertiary-fixed":"#ffdcc0","on-tertiary-fixed":"#2d1600","surface-bright":"#faf8ff","background":"#faf8ff","primary-container":"#007bb9","surface-variant":"#dae2fd","inverse-surface":"#283044","on-primary-fixed-variant":"#004b73","on-tertiary-fixed-variant":"#6b3b00","on-primary-container":"#fdfcff","on-primary":"#ffffff","on-surface":"#131b2e","on-secondary-container":"#5e6367","secondary-fixed-dim":"#c3c7cb","on-error-container":"#93000a","tertiary":"#894d00","on-error":"#ffffff","error-container":"#ffdad6","error":"#ba1a1a","surface-container-high":"#e2e7ff","on-tertiary":"#ffffff","on-background":"#131b2e","on-secondary-fixed-variant":"#43474b","on-surface-variant":"#3f4850","surface-container-low":"#f2f3ff","outline-variant":"#bfc7d2","outline":"#707881","surface-container-highest":"#dae2fd","primary-fixed-dim":"#93ccff","surface-container":"#eaedff","tertiary-fixed-dim":"#ffb875","surface-container-lowest":"#ffffff"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter":"16px","lg":"24px","xs":"4px","md":"16px","unit":"4px","margin-desktop":"24px","xl":"32px","margin-mobile":"16px","sm":"8px"},"fontFamily":{"headline-lg-mobile":["Inter"],"headline-md":["Inter"],"headline-lg":["Inter"],"body-md":["Inter"],"code-label":["JetBrains Mono"],"code-data":["JetBrains Mono"],"body-sm":["Inter"],"body-lg":["Inter"],"headline-sm":["Inter"]},"fontSize":{"headline-lg-mobile":["24px",{"lineHeight":"30px","fontWeight":"600"}],"headline-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["30px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"code-label":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"500"}],"code-data":["13px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"></head><body class="bg-background font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-64 bg-white z-50 flex flex-col border-r border-slate-200">
+<div class="p-6 mb-4 flex items-center gap-3"><img alt="CRYSS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRL8VxNzyzVoaWFWKcZ3mBiBv5UE0HYCXHnWxBTVOLS9cbRqGsYl66Ej9YF8iFjSoL8oXfzM67SoC4cNBBF50I6Iom4hrC8NRPxjT6DEjLKhUZgc6nQL2CcYCYem9YeRUxE0Kkjvr-HAw-KJ1uQBhzKt_wrz5Af-r73gkdp_yqx7tJtve3rp9-477ZavGADPDti60DZiMUbETwIVQoYQ_PjknAT-6-dRqUnhDeQYRKW1nAJJmu36_-AY7rtFwv0Z2P4sk"><span class="font-headline-lg text-headline-lg tracking-tight text-[#0284c7]">CRYSS</span></div>
+<nav class="flex-1 px-4 space-y-1" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-sm rounded-lg"><a class="flex items-center px-4 py-2 rounded-lg text-sm text-on-surface-variant hover:bg-surface-container transition-all group" href="index.html"><span class="material-symbols-outlined mr-3 text-on-surface-variant">home</span>Home</a><a class="flex items-center px-4 py-2 rounded-lg text-sm text-on-surface-variant hover:bg-surface-container transition-all group" href="nodes.html"><span class="material-symbols-outlined mr-3 text-on-surface-variant">hub</span>Nodes</a><a class="flex items-center px-4 py-2 rounded-lg text-sm text-on-surface-variant hover:bg-surface-container transition-all group" href="doe.html"><span class="material-symbols-outlined mr-3 text-on-surface-variant">experiment</span>CRYSS DoE</a><a aria-current="page" class="flex items-center px-4 py-2 rounded-lg text-sm bg-primary/10 text-primary font-semibold transition-all group" href="hardware.html"><span class="material-symbols-outlined mr-3 text-primary">settings_input_component</span>Hardware</a><a class="flex items-center px-4 py-2 rounded-lg text-sm text-on-surface-variant hover:bg-surface-container transition-all group" href="https://github.com/idiocratease-Iggy/idiocratease-iggy.github.io/tree/root/docs"><span class="material-symbols-outlined mr-3 text-on-surface-variant">menu_book</span>Documentation</a></nav>
+<div class="p-4 border-t border-slate-200"><div class="bg-surface-container-low p-3 rounded-lg flex items-center gap-3"><div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center"><span class="material-symbols-outlined text-primary text-[18px]">person</span></div><div class="flex flex-col"><span class="text-sm font-semibold text-on-surface">Lab Lead</span><span class="text-[10px] font-label-caps uppercase text-on-surface-variant">Authenticated</span></div></div></div>
+</aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-16 bg-white/80 backdrop-blur-xl border-b border-slate-200 z-40 flex items-center justify-between px-8"><div class="flex items-center gap-md"><div class="flex items-center gap-sm px-sm py-xs bg-surface-container-high rounded border border-outline-variant"><div class="w-2 h-2 rounded-full bg-primary"></div><span class="font-code-label text-code-label text-on-surface uppercase">Node: Central-01</span></div></div><div class="flex items-center gap-lg"><div class="flex items-center gap-sm"><span class="material-symbols-outlined text-on-surface-variant text-[20px] cursor-pointer hover:text-primary transition-colors">search</span><span class="material-symbols-outlined text-on-surface-variant text-[20px] cursor-pointer hover:text-primary transition-colors">notifications</span><span class="material-symbols-outlined text-on-surface-variant text-[20px] cursor-pointer hover:text-primary transition-colors">help</span></div></div></header><main class="relative pt-16 min-h-screen bg-background"><div class="flex flex-col w-full min-h-[calc(100vh-64px)] p-lg gap-lg">
 <!-- Header -->
 <div class="flex items-center justify-between">
 <div>
@@ -300,7 +96,7 @@
 <span class="material-symbols-outlined text-[18px]">zoom_out</span>
 </button>
 </div>
-<img alt="Technical Diagram of Two-Phase Sample System" class="h-full max-h-[600px] w-auto object-contain mix-blend-multiply opacity-90 transition-transform duration-300 origin-top" data-scale="1" data-stitch-placeholder="https://lh3.googleusercontent.com/aida/AEtjO1XFSvIGzMyFcVD99PvEkaCr-1uID_8OYOUEjsKWWoRBTYh7-8RIFhHs6khw294B5vU-QKn7tCD0csganF-lJnywT_rmrEbyKp8Jw4i1XDTxy13MgxQB4-iPWNVYq_IdzLIKRKB24M9gh578BxM2yGGpsI1N7HbQ4fgY3NFPJ_8hAFAN_W90ciWqn87sKa-lp4fFsGH5SOz8ScgU-dNb-ZYxMXeyJJ9qW8WK5u3eNAQOSYE2f14Qfo9Knqz1" id="workflow-image" src="assets/workflow_high_res.png">
+<img alt="Technical Diagram of Two-Phase Sample System" class="h-full max-h-[600px] w-auto object-contain mix-blend-multiply opacity-90 transition-transform duration-300 origin-top" data-scale="1" id="workflow-image" src="assets/workflow_high_res.png" data-stitch-placeholder="https://lh3.googleusercontent.com/aida/AEtjO1XFSvIGzMyFcVD99PvEkaCr-1uID_8OYOUEjsKWWoRBTYh7-8RIFhHs6khw294B5vU-QKn7tCD0csganF-lJnywT_rmrEbyKp8Jw4i1XDTxy13MgxQB4-iPWNVYq_IdzLIKRKB24M9gh578BxM2yGGpsI1N7HbQ4fgY3NFPJ_8hAFAN_W90ciWqn87sKa-lp4fFsGH5SOz8ScgU-dNb-ZYxMXeyJJ9qW8WK5u3eNAQOSYE2f14Qfo9Knqz1">
 <!-- Overlay Reticle -->
 <div class="absolute inset-0 pointer-events-none flex items-center justify-center w-full">
 <div class="w-64 h-64 border border-primary/30 rounded-full relative animate-[spin_60s_linear_infinite]">
@@ -326,11 +122,11 @@
 <div class="flex flex-col flex-1 overflow-hidden bg-[#1a1e23]">
 <div class="p-md overflow-hidden font-code-data text-code-data text-surface-variant flex flex-col gap-xs shrink-0" style="height: 300px;">
 <h3 class="font-code-label text-code-label text-outline-variant uppercase mb-xs tracking-wider">Recent Activity</h3>
-<div class="flex flex-col gap-1 overflow-hidden flex-1" id="telemetry-log"><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">15:51:15.684</span><span class="">READ_TEMP: 22.38C</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">15:51:23.187</span><span class="">IDLE_PING_ACK</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">15:51:30.684</span><span class="">READ_TEMP: 22.49C</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">15:51:35.184</span><span class="">READ_TEMP: 22.38C</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">15:51:36.684</span><span class="">IDLE_PING_ACK</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">15:51:42.684</span><span class="">READ_TEMP: 22.44C</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">15:51:48.684</span><span class="">READ_TEMP: 22.38C</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">15:51:50.187</span><span class="">IDLE_PING_ACK</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">15:51:51.684</span><span class="">CHK_PRESS: 1.049 ATM</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">15:51:59.188</span><span class="">CHK_PRESS: 1.060 ATM</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">15:52:03.684</span><span class="">IDLE_PING_ACK</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">15:52:11.188</span><span class="">CHK_PRESS: 1.011 ATM</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">15:52:23.188</span><span class="">READ_TEMP: 22.38C</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">15:52:24.685</span><span class="">IDLE_PING_ACK</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">15:52:29.188</span><span class="">READ_TEMP: 22.35C</span></div></div>
+<div class="flex flex-col gap-1 overflow-hidden flex-1" id="telemetry-log"><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:12:03.007</span><span class="">READ_TEMP: 22.39C</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:12:06.005</span><span class="">READ_TEMP: 22.33C</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:12:13.505</span><span class="">CHK_PRESS: 1.015 ATM</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:12:15.008</span><span class="">IDLE_PING_ACK</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:12:16.505</span><span class="">IDLE_PING_ACK</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:12:24.005</span><span class="">CHK_PRESS: 1.014 ATM</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:12:28.505</span><span class="">CHK_PRESS: 1.034 ATM</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:12:39.008</span><span class="">READ_TEMP: 22.33C</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:12:42.008</span><span class="">CHK_PRESS: 1.042 ATM</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:12:43.505</span><span class="">READ_TEMP: 22.38C</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:12:45.008</span><span class="">READ_TEMP: 22.47C</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:12:57.006</span><span class="">IDLE_PING_ACK</span></div></div>
 </div>
 <div class="w-full flex-1 p-md pt-0 flex items-center justify-center overflow-hidden">
 <div class="w-full h-full rounded-lg overflow-hidden border border-outline">
-<img alt="CRYSS Hardware Integration" class="w-full h-full object-cover opacity-90" src="https://lh3.googleusercontent.com/aida/AEtjO1VAisMwlm0g1iPmVnbVfPtFrcvn953cgjCfULKjcfJzojt88X_WK_t0qlsGNHDi77qrTZSA5po0TwNy3DLOn3NOcong3R7ogdzdeOBCoptnYxPpAN26Uq9It1ANle3Hzq7bUgM2pUz0jr4a-RO3ULIuDyZl_Xi0P9Tt_SLHmmoe6jNSYU4NE1lR30cQifBJz8-_KtEXKSX2yBQPMCUJcS11GvQaX83XIl6-2ER7cZsHCMmk6qBrTA_lIzj_">
+<img alt="CRYSS Hardware Integration" class="w-full h-full object-cover opacity-90" src="https://lh3.googleusercontent.com/aida/AEtjO1XeWntEPp7c4KjjMxwgqwYmw_BC5NDP35mz6lo04hFbDKnPSCzomVR0miSbWOgtIIfhTD4E8NNhtxm8QZIZYSDhkZhFXI2RuPnzHBc4vQ_vxigAk6VuJ0QwX4X7GIlRW9tP8CZbkJ5-RxRI1swdR24dcHnyxUH1vPwc-UE1oQeKxscMVu5B5sgsSKFwJ1OJmCVw2Z6kT_y-7fqoFI7wnGQ0_-CFiISAZUc89LTB5Ke-q8y5bA_ZF3fpjE4P">
 </div>
 </div>
 </div>
@@ -338,10 +134,10 @@
 </div>
 </div>
 <script>
-    // Simple script to simulate telemetry feed updates and constrain to 15 lines
+    // Simple script to simulate telemetry feed updates and constrain to 12 lines
     document.addEventListener('DOMContentLoaded', () => {
         const log = document.getElementById('telemetry-log');
-        const MAX_LINES = 15;
+        const MAX_LINES = 12;
         
         // Ensure initial count is capped
         while (log.children.length > MAX_LINES) {
@@ -366,7 +162,7 @@
                 
                 log.appendChild(el);
                 
-                // Enforce 15 line limit by removing oldest
+                // Enforce 12 line limit by removing oldest
                 if(log.children.length > MAX_LINES) {
                     log.removeChild(log.firstChild);
                 }
@@ -377,6 +173,12 @@
 <style>
     @keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
 </style></main></div>
+
+
+
+
+
+
 
 
 </body></html>
