@@ -1,0 +1,862 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Calibri Light";
+	panose-1:2 15 3 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-top:8.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#2F5496;
+	font-weight:normal;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-link:"Footnote Text Char";
+	margin:0cm;
+	font-size:10.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:0cm;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;
+	color:#44546A;
+	font-style:italic;}
+span.MsoFootnoteReference
+	{vertical-align:super;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Calibri Light",sans-serif;
+	color:#2F5496;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	color:#2F5496;}
+span.FootnoteTextChar
+	{mso-style-name:"Footnote Text Char";
+	mso-style-link:"Footnote Text";}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-GB link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<h1>CRYSS: a Data Analysis System for High-Throughput Crystallization Screening</h1>
+
+<p class=MsoNormal>CRYSS is an open<span style='font-family:"Cambria Math",serif'>&#8209;</span>source
+insight generator for partitioned equilibrium datasets, designed to convert
+complex multicomponent solubility behaviour into mechanistic, decision<span
+style='font-family:"Cambria Math",serif'>&#8209;</span>ready purification
+models..</p>
+
+<h2>Executive Summary</h2>
+
+<h3>Introduction</h3>
+
+<p class=MsoNormal>Chemical synthesis almost always produces side products,
+making purification an essential part of process development. In multi&#8209;step
+pharmaceutical synthesis, even high step yields accumulate into substantial
+overall loss: a ten&#8209;step sequence at 90% per step delivers only ~35%
+overall yield (0.9¹&#8304;). In practice, synthesis is an exercise in impurity
+removal.</p>
+
+<p class=MsoNormal>Crystallization is one of the most attractive purification
+methods when the target molecule is a solid. It is operationally simple,
+scalable, and cost&#8209;effective. Yet optimizing a crystallization process is
+non&#8209;trivial: one must maximize space&#8209;time yield while meeting
+stringent quality targets. This involves controlling polymorphs, managing
+crystal growth to avoid defects and impurity inclusion, understanding terminal
+solid&#8209;solution behaviour, and applying strategies such as seeding or
+carefully designed cooling trajectories (or other routes to metastable
+supersaturation such as evaporation or antisolvent addition). These
+optimizations operate in a kinetically controlled regime and require
+significant effort.</p>
+
+<p class=MsoNormal>Before any of that work begins, however, the primary
+screening question is simple:</p>
+
+<p class=MsoNormal><b>Which systems give the highest selective removal of
+impurities, and therefore the highest achievable yield of the target molecule?</b></p>
+
+<p class=MsoNormal>Answering this requires exploring solvents, solvent
+combinations (including proxies for antisolvent addition), and—where chemistry
+allows—derivatization. Salt formation is particularly attractive compared with
+covalent derivatization. These choices introduce categorical variables, and
+combinatorial complexity escalates quickly.</p>
+
+<p class=MsoNormal>Parallel small&#8209;reactor blocks with stirring and
+thermal cycling provide an efficient way to screen purification behaviour
+across many systems. The challenge then becomes: <b>how do we interpret the
+results of such a screening program?</b></p>
+
+<h3>CRYSS Workflow Overview</h3>
+
+<p style='margin-left:18.0pt;page-break-after:avoid'><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif'>At its simplest, the method consists
+of the following steps (see </span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Figure 1</span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>):</span></p>
+
+<p style='margin-left:54.0pt;text-indent:-18.0pt;page-break-after:avoid'><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Equilibrate the
+candidate mixture (which may include different salt forms) with various
+solvents or solvent mixtures in a closed system to avoid solvent loss.
+Achieving equilibrium is essential, so thermal cycling, agitation, and
+sufficient time are required.</span></p>
+
+<p style='margin-left:54.0pt;text-indent:-18.0pt;page-break-after:avoid'><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Determine the mass
+fraction of the mixture in solution and solid phases at equilibrium. If
+performed carefully, only calibrated analytics of the solution phase are
+needed: knowing the initial mass and the dissolved mass immediately gives the
+solid mass by difference. Avoiding solvent loss is critical, as evaporation
+artificially inflates the apparent dissolved mass. Alternatively, separating
+solid and solution and applying area % analysis yields the same information via
+the lever rule, though this is more difficult at small scale.</span></p>
+
+<p style='margin-left:54.0pt;text-indent:-18.0pt;page-break-after:avoid'><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Record each
+experiment in an Excel file, including:</span></p>
+
+<p style='margin-left:90.0pt;text-indent:-18.0pt;page-break-after:avoid'><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>a.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>starting mixture
+composition (Xc),</span></p>
+
+<p style='margin-left:90.0pt;text-indent:-18.0pt;page-break-after:avoid'><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>b.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>solid phase
+composition (Xs),</span></p>
+
+<p style='margin-left:90.0pt;text-indent:-18.0pt;page-break-after:avoid'><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>c.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>solution phase
+composition (Xl),</span></p>
+
+<p style='margin-left:90.0pt;text-indent:-18.0pt;page-break-after:avoid'><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>d.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>experiment or mixture
+ID.</span></p>
+
+<p style='margin-left:54.0pt;text-indent:-18.0pt;page-break-after:avoid'><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>4)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>Feed the dataset into
+CRYSS, which ranks each experiment by the predicted maximum achievable yield (</span>R<sub>max</sub><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif'>) once optimal
+process conditions are applied. CRYSS identifies the systems worth further
+development.</span></p>
+
+<p style='margin-left:18.0pt;page-break-after:avoid'><img width=602 height=898
+id="Picture 2" src="CRYSS%20White%20PaperV2_files/image001.jpg"></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref239318371">Figure </a>1: CRYSS enables a highly automated and
+consistent workflow</p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>&nbsp;</p>
+
+<h2>Core Principle</h2>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='position:absolute;z-index:251664384;left:0px;margin-left:553px;
+margin-top:808px;width:115px;height:63px'><img width=92 height=50
+src="CRYSS%20White%20PaperV2_files/image002.png"></span><img width=346
+height=263 src="CRYSS%20White%20PaperV2_files/image003.png" align=left
+hspace=12 alt="Ijms 24 00846 g002">Binary System</p>
+
+<p class=MsoListParagraphCxSpMiddle>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpMiddle>In a binary system (e.g., diastereomeric
+salt resolution), if both components are present in the solid at equilibrium,
+the solution phase must have the eutectic composition (x<sub>eu</sub>). Knowing
+x<sub>eu</sub> allows straightforward calculation of the maximum possible
+recovery of pure material:</p>
+
+<p class=MsoListParagraphCxSpMiddle>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpMiddle><span
+style='font-size:12.0pt;line-height:115%;font-family:"Calibri",sans-serif'><img
+width=122 height=38 src="CRYSS%20White%20PaperV2_files/image004.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpMiddle>This relationship is familiar from
+purification of enantioenriched systems.<span class=MsoFootnoteReference> <a
+href="#_ftn1" name="_ftnref1" title=""><span class=MsoFootnoteReference><span
+style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'>[1]</span></span></a></span>
+ However, multicomponent systems behave differently: the solution phase only
+has the true eutectic composition at R<sub>max</sub>, not throughout the entire
+recovery range. </p>
+
+<p class=MsoListParagraphCxSpMiddle>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Multicomponent
+Systems</p>
+
+<p class=MsoListParagraphCxSpMiddle>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpMiddle>In multicomponent mixtures, solubility
+behaviour is encoded in how each component’s level changes as a function of
+equilibrium partitioning at different recovery points R (see Figure
+2). For example, if 1 g of mixture is equilibrated with a given solvent volume
+and 0.1 g dissolves, then 0.9 g remains in the solid phase: R = 90% recovery. R<sub>max</sub>
+is the recovery corresponding to the maximum physical yield of pure material,
+and achieving it requires an optimal solvent volume. Using more solvent than
+this reduces yield.</p>
+
+<p class=MsoListParagraphCxSpLast>&nbsp;</p>
+
+<p class=MsoNormal style='margin-left:36.0pt;page-break-after:avoid'>Crucially,
+all information needed to identify a good purification system is encoded in the
+analytical profiles across the range R = 100% &#8594; R<sub>max</sub>. This is
+analogous to diastereomer screening, but requires more sophisticated analysis.
+CRYSS provides exactly that.</p>
+
+<p class=MsoNormal style='margin-left:36.0pt;page-break-after:avoid'><img
+width=602 height=445 id="Picture 1"
+src="CRYSS%20White%20PaperV2_files/image005.png"></p>
+
+<p class=MsoCaption style='margin-left:35.45pt'><a name="_Ref239319394">Figure </a>2 NODES simulation of a 5-component system; the 3 white lines these slices at
+different Recoveries (R) which correlate with having a different solvent volume
+(bottom plot) and result in variation of the purity of the target compound (top
+plot); note the way the impurities vary in a complex way due to their
+underlying PhysChem parameters. The maximum yield for the system when optimized
+is 68% physical recovery of pure component 1 (R<sub>max</sub> = 68%), this the
+only point in the system where the liquor compositions is the eutectic
+composition, as distinct from a binary system where the liquors have the
+eutectic composition throughout the range R = 100% - R<sub>max</sub>.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:54.0pt;text-indent:-18.0pt'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Understanding
+Multicomponent Eutectics</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'>In an n<span
+style='font-family:"Cambria Math",serif'>&#8209;</span>component system:</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>The most soluble portion is a eutectic containing all n
+components.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Once dissolved, the next most soluble portion is a eutectic of
+(n–1) components.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>This continues until the least soluble portion remains.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'>Typically, the
+least soluble component is the desired product—but occasionally a recalcitrant
+impurity is least soluble, leading to purification of the wrong species. This
+is disastrous in practice.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'>Because the
+starting composition is known, applying even a single solvent aliquot yields a
+composition slice at a specific recovery point (white lines in Figure 2). Using a mechanistic equilibrium model, CRYSS fits the data and projects
+forward to calculate R<sub>max</sub>.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'>The power of the
+method is its scalability: CRYSS can process large datasets automatically,
+ranking systems from high<span style='font-family:"Cambria Math",serif'>&#8209;</span>yielding
+to poor. This enables standardized, rapid triage of large screening arrays and
+selection of the most promising systems for optimization.</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'>&nbsp;</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:54.0pt'>In principle, if
+the fitted parameters are accurate, a single well<span style='font-family:"Cambria Math",serif'>&#8209;</span>constructed
+experiment is sufficient to estimate R<sub>max</sub>. Additional solvent
+volumes and replicates strengthen the dataset and improve confidence.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>Performance of CRYSS</h2>
+
+<p class=MsoNormal style='margin-bottom:0cm'>Using the NODES App, we can
+generate arbitrarily large in silico datasets that act as proxies for real
+experimental data obtained from the protocol described earlier. This allows us
+to choose sensible slice points within the critical composition space between R
+= 100% &#8594; R<sub>max</sub>. Each slice point corresponds to a specific
+solvent volume in a real experiment. A single slice typically lies near the
+middle of this range; multiple slices are distributed evenly, with slight
+randomization to minimize bias.</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>NODES can generate mathematically
+closed, precise equilibrium data using different starting compositions,
+different PhysChem parameter sets, and optional 1:1 addition compounds. These
+datasets are internally self<span style='font-family:"Cambria Math",serif'>&#8209;</span>consistent,
+and—critically—we know the true R<sub>max</sub> for each mixture. This makes
+them ideal for testing CRYSS.</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>Beyond perfect numerical data,
+NODES also includes options to introduce realistic experimental error:</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Analytical
+error</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:2.0cm;text-indent:-18.0pt'><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Capped at 2%</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:2.0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:2.0cm;text-indent:-18.0pt'><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Applied with a normal distribution across all components in the
+initial mixture, solid phase, and liquor phase.</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Systematic
+sampling error</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:2.0cm;text-indent:-18.0pt'><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Simulates cross<span style='font-family:"Cambria Math",serif'>&#8209;</span>contamination
+of solid into the liquor measurement and liquor into the solid measurement.</p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:2.0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-top:0cm;margin-right:0cm;margin-bottom:
+0cm;margin-left:2.0cm;text-indent:-18.0pt'><span style='font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Models the most common real<span style='font-family:"Cambria Math",serif'>&#8209;</span>world
+source of error during sampling.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>We generated a dataset of 50 mixtures, each with 1–3 slices
+(proxies for solvent volumes). The files are:</p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-bottom:0cm;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>260902_1814_Vol01.xlsx</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>260902_1814_Vol01_err5pc.xlsx</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>260902_1814_Vol02.xlsx</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>260902_1814_Vol02_err5pc.xlsx</p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-bottom:0cm;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>260902_1814_Vol03.xlsx</p>
+
+<p class=MsoListParagraphCxSpLast style='margin-bottom:0cm;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>260902_1814_Vol03_err5pc.xlsx</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>These datasets are available for review <a
+href="https://github.com/idiocratease-Iggy/idiocratease-iggy.github.io/upload/root/docs/CRYSS%20V1.0%20Test">here</a>.
+</p>
+
+<h2>CRYSS Performance Results</h2>
+
+<h3>Single<span style='font-family:"Cambria Math",serif'>&#8209;</span>Volume
+Data (1 R<span style='font-family:"Cambria Math",serif'>&#8209;</span>slice)</h3>
+
+<p class=MsoNormal style='margin-bottom:0cm'>Testing CRYSS with
+260902_1814_Vol01.xlsx yields the performance shown in Figure 3, with:</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>R² = 0.756</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>This level of predictivity is
+already highly acceptable. Even at a single solvent volume, the scatter plot
+clearly allows rapid visual identification of the best candidates for further
+experimentation.</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'><img border=0 width=566
+height=365 id="Picture 7" src="CRYSS%20White%20PaperV2_files/image006.png"></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref239321955">Figure </a>3: CRYSS run using NODES data from a single
+solvent volume (one R<span style='font-family:"Cambria Math",serif'>&#8209;</span>slice).
+The plot compares known NODES R<sub>max</sub> values with CRYSS<span
+style='font-family:"Cambria Math",serif'>&#8209;</span>predicted R<sub>max</sub>
+values. Blue dots: Monte Carlo simulation only, Orange dots: Hybrid approach
+(Monte Carlo results fed into an optimizer; best result plotted)</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h3>Three<span style='font-family:"Cambria Math",serif'>&#8209;</span>Volume
+Data (3 R<span style='font-family:"Cambria Math",serif'>&#8209;</span>slices)</h3>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>Jumping to 260902_1814_Vol03.xlsx,
+CRYSS achieves:</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>R² = 0.993</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>This is shown in Figure 4, demonstrating near<span style='font-family:"Cambria Math",serif'>&#8209;</span>perfect
+correlation between true and predicted R<sub>max</sub> values.</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;page-break-after:avoid'><img
+border=0 width=602 height=451 id="Picture 9"
+src="CRYSS%20White%20PaperV2_files/image007.png"></p>
+
+<p class=MsoCaption align=center style='text-align:center'><a
+name="_Ref239322407">Figure </a>4: CRYSS run using NODES data from three
+solvent volumes (three R<span style='font-family:"Cambria Math",serif'>&#8209;</span>slices).
+Blue dots: Monte Carlo only. Orange dots: Hybrid Monte Carlo + optimizer best
+result.</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<h3>Summary Across All Datasets</h3>
+
+<p class=MsoNormal style='margin-bottom:0cm'>We repeated this analysis across
+all NODES test files. The results are summarized in Figure 5. A key observation
+emerges:</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Experimental error (5%) only becomes visible in the most
+constrained three<span style='font-family:"Cambria Math",serif'>&#8209;</span>volume
+datasets.</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>For one or two solvent volumes, the inherent noise from fitting
+dominates, effectively masking the added experimental error.</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm;page-break-after:avoid'><img
+border=0 width=571 height=374 id="Picture 10"
+src="CRYSS%20White%20PaperV2_files/image008.png"></p>
+
+<p class=MsoCaption><a name="_Ref239323103">Figure </a>5: R² values for all
+NODES simulation datasets, comparing optimized results and the incremental
+improvement gained from additional solvent volumes (more R<span
+style='font-family:"Cambria Math",serif'>&#8209;</span>slices). Blue: Error<span
+style='font-family:"Cambria Math",serif'>&#8209;</span>free datasets. Orange:
+Datasets with 5% error applied</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal>Given that Figure 3 already shows clear visual separation of
+good vs poor systems, these results indicate meaningful robustness in the CRYSS
+methodology.</p>
+
+<h2>Technical Approach</h2>
+
+<p class=MsoNormal style='margin-bottom:0cm'>CRYSS employs a hybrid strategy
+combining:</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Monte Carlo simulation, which explores the parameter space
+broadly</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Focused optimization, which refines the best Monte Carlo
+candidates</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>This combination delivers
+excellent predictivity. Together, the results support an experimental strategy:</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Run a
+large screen using only a single solvent volume per mixture.</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Select the
+top ~25% of systems based on CRYSS<span style='font-family:"Cambria Math",serif'>&#8209;</span>predicted
+R<sub>max</sub>.</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>Perform
+more detailed experiments on this subset using two or more solvent volumes.</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>At its current build level, CRYSS
+is a GUI<span style='font-family:"Cambria Math",serif'>&#8209;</span>free
+application. It:</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>accepts
+Excel input files containing composition data</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>parses
+replicates</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>clusters
+experiments by starting mixture composition</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt'>4)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>identifies
+R<span style='font-family:"Cambria Math",serif'>&#8209;</span>slices (solvent
+volumes) via lever<span style='font-family:"Cambria Math",serif'>&#8209;</span>rule
+analysis with error/outlier correction</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoListParagraph style='margin-bottom:0cm;text-indent:-18.0pt'>5)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span>solves for
+R<sub>max</sub> accordingly</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>If a NODES dataset is provided,
+CRYSS plots R<sub>max</sub>(NODES) vs R<sub>max</sub>(CRYSS). For real
+experimental data (where true R<sub>max</sub> is unknown), CRYSS outputs an
+Excel file containing mixture IDs and predicted R<sub>max</sub> values.</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>In its present form, CRYSS is
+ideally suited for development into an API for integration with existing
+hardware/software platforms.</p>
+
+<p class=MsoNormal style='margin-bottom:0cm'>&nbsp;</p>
+
+<h2>Expected Impact</h2>
+
+<p class=MsoNormal>CRYSS introduces a fundamentally new capability into
+crystallization development: the ability to convert small&#8209;scale
+equilibrium partitioning data into mechanistic predictions of maximum
+achievable yield (R<sub>max</sub>) across multicomponent mixtures. This
+transforms early&#8209;stage purification screening from a largely empirical
+exercise into a quantitative, model&#8209;driven workflow.</p>
+
+<p class=MsoNormal>By ranking solvent, solvent&#8209;mixture, and salt&#8209;formation
+systems based on their predicted purification ceiling, CRYSS enables process
+chemists to focus effort where it matters most. Instead of optimizing dozens of
+marginal systems, teams can rapidly triage large screening arrays and
+concentrate resources on the top&#8209;performing 20–25% of candidates. This
+reduces experimental burden, accelerates development timelines, and increases
+the likelihood of selecting a high&#8209;yielding crystallization route early
+in the project.</p>
+
+<p class=MsoNormal>The hybrid Monte Carlo + optimization engine provides
+robustness against noise, allowing meaningful predictions even from minimal
+data (a single solvent volume per mixture). As a result, CRYSS supports a two&#8209;stage
+experimental strategy: broad, inexpensive initial screening followed by
+targeted, high&#8209;resolution follow&#8209;up studies. This approach is well
+aligned with modern parallel reactor platforms and high&#8209;throughput
+workflows.</p>
+
+<p class=MsoNormal>Because CRYSS is mechanistic rather than empirical, it
+scales naturally to complex mixtures, salt&#8209;forming systems, and
+derivatization strategies. It also integrates seamlessly with NODES, enabling <i>in
+silico</i> exploration of purification landscapes before committing laboratory
+resources. In its current form, CRYSS is already suitable for API integration
+into automated screening hardware, ELNs, and laboratory informatics systems.</p>
+
+<p class=MsoNormal>Taken together, CRYSS has the potential to reshape how
+crystallization screening is performed: from trial&#8209;and&#8209;error
+exploration to predictive, data&#8209;driven decision&#8209;making.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h1>Conclusion</h1>
+
+<p class=MsoNormal>CRYSS V1.0 demonstrates that multicomponent crystallization
+behaviour — long considered too complex for practical mechanistic analysis —
+can be decoded, modelled, and used to guide purification strategy. The results
+from extensive NODES benchmarking show that even sparse equilibrium data
+contain enough information to estimate R<sub>max</sub> with high fidelity, and
+that hybrid Monte Carlo + optimization methods deliver near&#8209;ideal
+predictivity when multiple solvent volumes are available.</p>
+
+<p class=MsoNormal>The methodology is robust, scalable, and experimentally
+efficient. A single well&#8209;constructed equilibrium experiment can often
+provide a reliable estimate of R<sub>max</sub>, and additional solvent volumes
+further refine the prediction. CRYSS therefore offers a practical route to
+mechanistic insight without imposing heavy experimental overhead.</p>
+
+<p class=MsoNormal>Most importantly, CRYSS provides clarity at the earliest and
+most consequential stage of crystallization development: selecting which
+systems deserve attention. By identifying high&#8209;yielding solvent and salt&#8209;forming
+conditions before optimization begins, CRYSS helps ensure that development
+resources are spent on the right problems, not the wrong ones.</p>
+
+<p class=MsoNormal>CRYSS V1.0 validates a concept that equilibrium partitioning
+data, interpreted correctly, can reveal the purification limits of complex
+mixtures. With this foundation established, future versions can expand into GUI
+interfaces, automated hardware integration, real&#8209;time analytics, and
+deeper modelling of polymorphism, metastability, and kinetic effects.</p>
+
+<p class=MsoNormal>For now, CRYSS stands as a practical, mechanistic, and
+experimentally grounded tool that brings predictive power to crystallization
+screening — and opens the door to a more rational, data&#8209;driven future for
+purification science.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<h2>Acknowledgements</h2>
+
+<p class=MsoNormal>CRYSS would like to acknowledge the contribution made by the
+following people:</p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Eric  Damen</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Simone Darphorn-Hooijschuur</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Francois Gilardoni</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Lisa McQueen (née Agocs)</p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Erik-Jan Ras</p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span>Goran Verspui </p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+<div><br clear=all>
+
+<hr align=left size=1 width="33%">
+
+<div id=ftn1>
+
+<p class=MsoFootnoteText><a href="#_ftnref1" name="_ftn1" title=""><span
+class=MsoFootnoteReference><span class=MsoFootnoteReference><span
+style='font-size:10.0pt;line-height:107%;font-family:"Calibri",sans-serif'>[1]</span></span></span></a>
+Based on the melting binary phase diagram of diastereomeric mixtures, Ács et
+al. calculated that, based on the knowledge of the eutectic composition of the
+binary melting phase diagram, it is possible to calculate the resolvability (F)
+of the crystalline precipitating diastereomer of the given racemic compound
+with the given resolving agent. This is a generally applicable method if, after
+optimization, diastereomeric mixtures have been obtained, and their melting
+binary phase diagram can be plotted; Pálovics, E.; Madarász, J.; Pokol, G.;
+Fogassy, E.; Bánhegyi, D.F. Economic Separations of Organic Acidic or Basic
+Enantiomeric Mixtures—A Protocol Suggestion.&nbsp;<i>Int. J. Mol. Sci.</i>&nbsp;<b>2023</b>,&nbsp;<i>24</i>,
+846. https://doi.org/10.3390/ijms24010846</p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>

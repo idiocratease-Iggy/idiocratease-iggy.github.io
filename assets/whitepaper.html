@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRYSS White Paper</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6fafe;
+      --panel: #ffffff;
+      --panel-soft: #eef4f8;
+      --primary: #006194;
+      --primary-strong: #004b73;
+      --text: #171c1f;
+      --muted: #3f4850;
+      --border: #dfe3e7;
+      --badge: #e8f5ff;
+      --success: #22C55E;
+      --shadow: rgba(15, 23, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--bg);
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 20px 20px 64px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 12px 0 18px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--primary);
+      letter-spacing: -0.02em;
+    }
+
+    .brand-mark {
+      width: 30px;
+      height: 30px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--primary), #5faee1);
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 0 8px 20px rgba(0, 97, 148, 0.2);
+    }
+
+    .download-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      box-shadow: 0 8px 18px rgba(0, 97, 148, 0.18);
+    }
+
+    .paper {
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px var(--shadow);
+      overflow: hidden;
+    }
+
+    .paper-inner {
+      padding: 28px 28px 32px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      margin-bottom: 18px;
+      border-radius: 999px;
+      background: var(--badge);
+      color: var(--primary-strong);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--success);
+      box-shadow: 0 0 8px rgba(34, 197, 94, 0.7);
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2.1rem, 4vw, 3.3rem);
+      line-height: 1.08;
+      letter-spacing: -0.05em;
+      color: var(--text);
+    }
+
+    h2 {
+      margin: 28px 0 10px;
+      font-size: clamp(1.45rem, 2vw, 2.1rem);
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+      color: var(--text);
+    }
+
+    h3 {
+      margin: 20px 0 10px;
+      font-size: 1.08rem;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .lede {
+      font-size: 1.08rem;
+      max-width: 760px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 20px 0 10px;
+    }
+
+    .meta-item {
+      background: rgba(255,255,255,0.8);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px 14px;
+    }
+
+    .meta-label {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-family: 'JetBrains Mono', monospace;
+      font-weight: 600;
+    }
+
+    .meta-value {
+      color: var(--text);
+      font-size: 0.96rem;
+      font-weight: 600;
+    }
+
+    .section {
+      border-top: 1px solid var(--border);
+      padding-top: 20px;
+      margin-top: 18px;
+    }
+
+    .section:first-of-type {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 8px;
+    }
+
+    .quote {
+      margin: 18px 0;
+      padding: 16px 18px;
+      background: var(--panel-soft);
+      border-left: 4px solid var(--primary);
+      border-radius: 12px;
+      font-style: italic;
+      color: var(--text);
+    }
+
+    .pullout {
+      background: var(--panel-soft);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin: 14px 0 18px;
+      color: var(--text);
+    }
+
+    .pullout strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--text);
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .formula {
+      margin: 18px 0;
+      padding: 14px 16px;
+      border-radius: 12px;
+      background: rgba(0, 97, 148, 0.04);
+      border: 1px solid rgba(0, 97, 148, 0.12);
+      color: var(--text);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.9rem;
+      line-height: 1.8;
+      overflow-x: auto;
+    }
+
+    ul, ol {
+      margin: 0 0 16px;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.7;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 18px;
+      margin-top: 10px;
+    }
+
+    .small-card {
+      background: var(--panel-soft);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      color: var(--muted);
+      align-self: start;
+    }
+
+    .small-card strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--text);
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .footnote {
+      margin-top: 18px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    figure {
+      margin: 22px 0 18px;
+      padding: 14px;
+      background: rgba(255,255,255,0.75);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.04);
+    }
+
+    .figure-summary {
+      padding-bottom: 18px;
+    }
+
+    .figure-summary img {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 10px;
+      padding-bottom: 8px;
+      box-sizing: border-box;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: white;
+    }
+
+    figure img {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: white;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      font-size: 0.84rem;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        padding: 12px 12px 40px;
+      }
+
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .paper-inner {
+        padding: 20px 18px 24px;
+      }
+
+      .meta-grid,
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <div class="brand">
+        <span class="brand-mark">C</span>
+        <span>CRYSS</span>
+      </div>
+      <a class="download-link" href="../docs/CRYSS%20White%20Paper.pdf" target="_blank" rel="noopener noreferrer">
+        <span>↓</span>
+        Download PDF
+      </a>
+    </div>
+
+    <article class="paper">
+      <div class="paper-inner">
+        <div class="eyebrow"><span class="dot"></span> CRYSS White Paper</div>
+
+        <h1>CRYSS: A Data Analysis System for High-Throughput Crystallization Screening</h1>
+
+        <p class="lede">
+          CRYSS is an open-source insight generator for partitioned equilibrium datasets, designed to convert complex multicomponent solubility behaviour into mechanistic, decision-ready purification models.
+        </p>
+
+        <div class="meta-grid">
+          <div class="meta-item">
+            <span class="meta-label">Status</span>
+            <span class="meta-value">V1.0 Live</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Scope</span>
+            <span class="meta-value">Industrial &amp; Academic</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">License</span>
+            <span class="meta-value">MIT</span>
+          </div>
+        </div>
+
+        <section class="section">
+          <h2>Executive Summary</h2>
+
+          <p>
+            Purification is often the decisive stage in process development. In multistep synthesis, even a sequence with strong individual yields can still fail economically because every impurity-removal step matters. A ten-step route operating at 90% yield per step delivers only about 35% overall yield, so the real challenge is not simply making the target molecule, but isolating it in a form that is both pure and scalable.
+          </p>
+
+          <p>
+            Crystallization is one of the most attractive purification technologies for a solid target because it is simple, robust, and compatible with large-scale manufacturing. Yet the choice of solvent system is rarely obvious. The best solvent is not necessarily the one that dissolves the most material, but the one that gives the sharpest selective partitioning between the target and the impurity profile. In practice, this means identifying conditions that maximize recovery while maintaining the desired purity and processability.
+          </p>
+
+          <p>
+            The challenge is compounded by the number of variables involved. Solvent identity, solvent mixtures, temperature, composition, and the possibility of salt formation or derivatization all influence the outcome. Traditional empirical screening quickly becomes unmanageable. CRYSS was developed to close that gap by converting equilibrium-partitioned datasets into mechanistic, decision-ready models of purification performance.
+          </p>
+
+          <p>
+            At the core of CRYSS is the concept of R<sub>max</sub>: the maximum physically achievable recovery of the target material under the fitted equilibrium model. Rather than relying on trial-and-error interpretation alone, CRYSS fits the data, compares multiple candidate systems, and ranks them by their predicted purification ceiling. This allows teams to focus experimentation on the most promising solvent systems before committing to costly optimization work.
+          </p>
+
+          <div class="formula">
+            R<sub>max</sub> = maximum physically achievable recovery of the target material under the fitted equilibrium model
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>CRYSS Workflow Overview</h2>
+
+          <ol>
+            <li><strong>Equilibrate the candidate mixture</strong> with various solvents or solvent mixtures in a closed system to avoid solvent loss. Achieving equilibrium is essential, so thermal cycling, agitation, and sufficient residence time are required.</li>
+            <li><strong>Determine the mass fraction</strong> of the mixture in solution and solid phases at equilibrium. If performed carefully, only calibrated analytics of the solution phase are needed: the initial mass and dissolved mass directly imply the solid mass by difference. Solvent loss must be controlled because evaporation can artificially inflate the apparent dissolved mass.</li>
+            <li><strong>Record each experiment</strong> in a structured dataset, including starting mixture composition X<sub>c</sub>, solid-phase composition X<sub>s</sub>, solution-phase composition X<sub>l</sub>, and experiment or mixture ID.</li>
+            <li><strong>Fit the dataset in CRYSS</strong>, which ranks each experiment by the predicted maximum achievable yield, R<sub>max</sub>, under the selected process conditions.</li>
+          </ol>
+
+          <p>
+            The workflow therefore converts equilibrium partitioning data into a mechanistic view of process viability. It produces a ranked list of systems worth deeper development and highlights the mixtures most likely to preserve yield while rejecting impurities and by-products.
+          </p>
+
+          <figure>
+            <img src="white_paper/CRYSS White PaperV2_files/image001.png" alt="CRYSS workflow summary diagram">
+            <figcaption>Figure 1: CRYSS enables a highly automated and consistent workflow for equilibrium-based crystallization screening.</figcaption>
+          </figure>
+        </section>
+
+        <section class="section">
+          <h2>Core Principle</h2>
+
+          <div class="two-col">
+            <div>
+              <p>
+                In a binary system, if both components are present in the solid at equilibrium, the solution phase must contain the eutectic composition. Knowing that eutectic composition allows direct calculation of the maximum possible recovery of pure material.
+              </p>
+
+              <p>
+                In multicomponent systems, by contrast, the solution phase only has the true eutectic composition at R<sub>max</sub>, not throughout the entire recovery window. This distinction is central to the problem: the system is not described by a single constant eutectic throughout the partitioning trajectory, but by a moving composition map that evolves as recovery advances.
+              </p>
+
+              <p>
+                The analytical profile across the recovery range from R = 100% to R<sub>max</sub> encapsulates the system-level information required to assess purification viability. It is analogous to diastereomer screening, but the multicomponent case requires much more sophisticated interpretation of composition-space behaviour.
+              </p>
+            </div>
+
+            <div class="small-card">
+              <strong>Decision lens</strong>
+              CRYSS focuses on the recovery region where the system is mechanistically meaningful, rather than treating a single apparent maximum as sufficient evidence of process quality.
+            </div>
+          </div>
+
+          <div class="formula">
+            For a binary resolution system: recovery is governed by the eutectic composition of the liquid phase.<br>
+            For an n-component system: the relevant state space evolves continuously as the system moves from full dissolution toward the optimum recovery condition.
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Understanding Multicomponent Eutectics</h2>
+
+          <p>
+            In an n-component system, the most soluble portion is a eutectic containing all n components. Once dissolved, the next most soluble portion is a eutectic of (n-1) components, and so on until the least soluble portion remains. In the most common scenario, the least soluble component is the desired product, but occasionally a recalcitrant impurity is the least soluble species, leading to purification of the wrong compound. This is a major failure mode in real systems.
+          </p>
+
+          <p>
+            Because the starting composition is known, even a single solvent aliquot yields a composition slice at a specific recovery point. Using a mechanistic equilibrium model, CRYSS fits the data and projects forward to estimate the solvent volume and recovery condition corresponding to R<sub>max</sub>.
+          </p>
+
+          <div class="quote">
+            The power of the method is its scalability: CRYSS can process large datasets automatically, rank systems from high-yielding to poor, and allow rapid triage of large screening arrays without compromising mechanistic interpretation.
+          </div>
+
+          <p>
+            In principle, if the fitted parameters are accurate, a single well-constructed experiment is sufficient to estimate R<sub>max</sub>. Additional solvent volumes and replicate measurements strengthen the dataset and improve confidence in the fitted model.
+          </p>
+
+          <figure>
+            <img src="white_paper/CRYSS White PaperV2_files/image005.png" alt="Five-component eutectic visualization">
+            <figcaption>Figure 2: NODES simulation of a five-component system showing how composition slices at different recoveries alter target purity and impurity behaviour.</figcaption>
+          </figure>
+        </section>
+
+        <section class="section">
+          <h2>Performance of CRYSS</h2>
+
+          <p>
+            Using the NODES application, it is possible to generate arbitrarily large in silico datasets that act as proxies for real experimental data. This enables the selection of meaningful slice points within the critical composition space between R = 100% and R<sub>max</sub>. Each slice point corresponds to a specific solvent volume in a real experiment and provides a different operating state of the system.
+          </p>
+
+          <p>
+            These synthetic datasets are internally self-consistent and, critically, the true R<sub>max</sub> value is known for each mixture. This makes them ideal for testing the predictive power and robustness of CRYSS under controlled but realistic conditions.
+          </p>
+
+          <p>
+            NODES also supports introduction of realistic experimental error, including analytical error and systematic sampling error caused by cross-contamination between solid and liquor phases. This allows the method to be evaluated against the kind of noise that is encountered in practical laboratory screening.
+          </p>
+
+          <h3>Single-volume data</h3>
+          <p>
+            Testing CRYSS with a single solvent volume gives a clear relationship between known and predicted R<sub>max</sub> values. Even with minimal data, the scatter plot allows rapid visual separation of robust candidates from weak or non-viable systems.
+          </p>
+
+          <figure>
+            <img src="white_paper/CRYSS White PaperV2_files/image006.png" alt="Single-volume CRYSS performance scatter plot">
+            <figcaption>Figure 3: CRYSS performance using a single solvent volume. The plot compares known NODES R<sub>max</sub> values with CRYSS-predicted R<sub>max</sub> values.</figcaption>
+          </figure>
+
+          <h3>Three-volume data</h3>
+          <p>
+            With three solvent volumes, the predictive relationship improves substantially. The results show near-perfect agreement between true and predicted R<sub>max</sub> values, demonstrating that increasing the number of composition slices materially strengthens the fitted model and reduces uncertainty in the ranking.
+          </p>
+
+          <figure>
+            <img src="white_paper/CRYSS White PaperV2_files/image007.png" alt="Three-volume CRYSS performance scatter plot">
+            <figcaption>Figure 4: CRYSS performance using three solvent volumes. Blue points represent Monte Carlo-only predictions; orange points show the hybrid Monte Carlo + optimizer result.</figcaption>
+          </figure>
+
+          <h3>Summary across all datasets</h3>
+          <p>
+            Across the full test set, the pattern is consistent: error-free datasets perform strongly, while moderate experimental errors become apparent only in the most constrained multi-volume conditions. The important outcome is that CRYSS remains meaningfully robust even when the underlying dataset contains realistic noise.
+          </p>
+
+          <figure class="figure-summary">
+            <img src="white_paper/CRYSS White PaperV2_files/image008.png" alt="Across-dataset CRYSS performance summary">
+            <figcaption>Figure 5: Summary of R<sup>2</sup> values across all NODES simulation datasets, comparing error-free and 5% noise scenarios.</figcaption>
+          </figure>
+        </section>
+
+        <section class="section">
+          <h2>Technical Approach</h2>
+
+          <p>
+            CRYSS employs a hybrid strategy combining Monte Carlo simulation with focused optimization. Monte Carlo explores the parameter space broadly, whereas optimization refines the best candidates found during the global search. Together this yields a model that is robust to noise while remaining computationally efficient for screening studies.
+          </p>
+
+          <ol>
+            <li>Run a broad screen using a single solvent volume per mixture.</li>
+            <li>Select the top-performing systems using the CRYSS-predicted R<sub>max</sub>.</li>
+            <li>Perform targeted follow-up experiments on this subset using two or more solvent volumes.</li>
+          </ol>
+
+          <p>
+            In its present form, CRYSS accepts Excel input files, parses replicates, clusters experiments by starting mixture composition, identifies the relevant R-slices via lever-rule analysis with outlier correction, and solves for R<sub>max</sub>. For real experimental data where the true value is unknown, CRYSS outputs a structured Excel file containing mixture IDs and predicted recovery values.
+          </p>
+
+          <div class="formula">
+            R<sub>max</sub> is inferred from the composition trajectory between the initial slurry and the equilibrium condition at which the target species yields the maximum physically achievable recovery.
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Expected Impact</h2>
+
+          <p>
+            CRYSS introduces a new capability into crystallization development: the ability to convert small-scale equilibrium partitioning data into mechanistic predictions of maximum achievable yield across multicomponent mixtures. This transforms early-stage purification screening from an empirical exercise into a quantitative, model-driven workflow.
+          </p>
+
+          <p>
+            By ranking solvent, solvent-mixture, and salt-forming systems according to predicted purification ceilings, CRYSS enables process chemists to focus effort on the most promising systems instead of optimizing dozens of marginal candidates. This reduces experimental burden, accelerates development timelines, and increases the likelihood of selecting a high-yielding route early in a project.
+          </p>
+
+          <p>
+            The method also scales naturally to complex mixtures, salt-forming systems, and derivatization strategies. It integrates cleanly with high-throughput experimentation and automated laboratory workflows, making it especially well suited for future hardware and software integration.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Conclusion</h2>
+
+          <p>
+            CRYSS V1.0 demonstrates that multicomponent crystallization behaviour can be decoded, modelled, and used to guide purification strategy. The results from NODES benchmarking show that even sparse equilibrium data contain enough information to estimate R<sub>max</sub> with high fidelity, and that hybrid Monte Carlo plus optimization strategies deliver strong predictive power.
+          </p>
+
+          <p>
+            The methodology is robust, scalable, and experimentally efficient. A single well-constructed equilibrium experiment can often provide a useful estimate of R<sub>max</sub>, and additional solvent volumes sharpen the prediction further. CRYSS therefore offers a practical route to mechanistic insight without imposing heavy experimental overhead.
+          </p>
+
+          <p>
+            Most importantly, CRYSS clarifies the earliest and most consequential stage of crystallization development: selecting which systems deserve attention. By identifying high-yielding solvent and salt-forming conditions before optimization begins, CRYSS ensures that development resources are directed toward the right problems rather than the wrong ones.
+          </p>
+        </section>
+
+        <section class="section">
+          <h2>Acknowledgements</h2>
+          <p>
+            CRYSS would like to acknowledge the contribution made by Eric Damen, Simone Darphorn-Hooijschuur, Francois Gilardoni, Lisa McQueen (née Agocs), Erik-Jan Ras, and Goran Verspui.
+          </p>
+        </section>
+
+        <div class="footnote">
+          This draft is formatted for web presentation and intended to support the downloadable PDF version as a companion document.
+        </div>
+      </div>
+    </article>
+  </div>
+</body>
+</html>
