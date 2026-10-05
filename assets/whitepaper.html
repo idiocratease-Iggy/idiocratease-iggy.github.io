@@ -391,7 +391,7 @@
         <div class="meta-grid">
           <div class="meta-item">
             <span class="meta-label">Status</span>
-            <span class="meta-value">V1.0 Live</span>
+            <span class="meta-value">V2.0</span>
           </div>
           <div class="meta-item">
             <span class="meta-label">Scope</span>
@@ -445,6 +445,21 @@
             <img src="white_paper/CRYSS White PaperV2_files/image001.png" alt="CRYSS workflow summary diagram">
             <figcaption>Figure 1: CRYSS enables a highly automated and consistent workflow for equilibrium-based crystallization screening.</figcaption>
           </figure>
+        </section>
+
+        <section class="section">
+          <h2>From CRYSS V1.0 to V2.0</h2>
+
+          <p>
+            CRYSS V2.0 preserves the mechanistic model and Monte Carlo-plus-optimization approach established in V1.0, while making the workflow faster, easier to validate, and more practical to interpret.
+          </p>
+
+          <ol>
+            <li><strong>Enhanced input parser:</strong> supports the V2.0 workbook format with improved slice handling, replicate absorption, salt-former tracking, and tolerance-based filtering.</li>
+            <li><strong>Interactive parser-validation GUI:</strong> lets users adjust analytical and noise tolerances, inspect parser diagnostics, and check the data before it reaches the optimizer.</li>
+            <li><strong>CRYSS-P core:</strong> implements the Monte Carlo and optimizer pipeline in C++, using multicore, multithreaded processing. The white paper reports execution around 40 times faster, reducing typical run times from minutes to seconds.</li>
+            <li><strong>Interactive results viewer:</strong> presents R<sub>max</sub> heatmaps and best-system plots, with per-well interactive composition and relative-solvent-volume analysis.</li>
+          </ol>
         </section>
 
         <section class="section">
@@ -519,7 +534,7 @@
 
           <h3>Single-volume data</h3>
           <p>
-            Testing CRYSS with a single solvent volume gives a clear relationship between known and predicted R<sub>max</sub> values. Even with minimal data, the scatter plot allows rapid visual separation of robust candidates from weak or non-viable systems.
+            On the 50-mixture NODES benchmark, a single-volume dataset produced an R<sup>2</sup> of 0.756 between known and predicted R<sub>max</sub>. Even with minimal data, the results allow useful visual separation of stronger candidates from weak or non-viable systems.
           </p>
 
           <figure>
@@ -529,7 +544,7 @@
 
           <h3>Three-volume data</h3>
           <p>
-            With three solvent volumes, the predictive relationship improves substantially. The results show near-perfect agreement between true and predicted R<sub>max</sub> values, demonstrating that increasing the number of composition slices materially strengthens the fitted model and reduces uncertainty in the ranking.
+            With three solvent volumes, the benchmark reached an R<sup>2</sup> of 0.993, showing near-perfect agreement between true and predicted R<sub>max</sub> values. Additional composition slices strengthen the fitted model and reduce uncertainty in the ranking.
           </p>
 
           <figure>
@@ -539,7 +554,7 @@
 
           <h3>Summary across all datasets</h3>
           <p>
-            Across the full test set, the pattern is consistent: error-free datasets perform strongly, while moderate experimental errors become apparent only in the most constrained multi-volume conditions. The important outcome is that CRYSS remains meaningfully robust even when the underlying dataset contains realistic noise.
+            Across the test set, 5% experimental error became visible chiefly in the most constrained three-volume datasets. With one or two solvent volumes, fitting noise dominated and largely masked the added error. The results indicate useful robustness under the tested conditions.
           </p>
 
           <figure class="figure-summary">
@@ -562,7 +577,11 @@
           </ol>
 
           <p>
-            In its present form, CRYSS accepts Excel input files, parses replicates, clusters experiments by starting mixture composition, identifies the relevant R-slices via lever-rule analysis with outlier correction, and solves for R<sub>max</sub>. For real experimental data where the true value is unknown, CRYSS outputs a structured Excel file containing mixture IDs and predicted recovery values.
+            CRYSS accepts Excel input files, parses replicates, clusters experiments by starting mixture composition, identifies R-slices using lever-rule analysis with error and outlier correction, and solves for R<sub>max</sub>. The V2.0 parser adds support for its updated workbook format, slice handling, salt-former tracking, and configurable tolerances. For real experimental data, where the true value is unknown, CRYSS outputs mixture IDs and predicted recovery values in a structured Excel file.
+          </p>
+
+          <p>
+            V2.0 adds an interactive parser-validation interface ahead of the optimizer and a results viewer for heatmap-based R<sub>max</sub> comparison, best-system plots, and per-well composition and relative solvent-volume analysis. Its CRYSS-P C++ engine runs the Monte Carlo-plus-optimizer pipeline across multiple cores and threads; the white paper reports approximately 40× faster execution.
           </p>
 
           <div class="formula">
@@ -582,7 +601,11 @@
           </p>
 
           <p>
-            The method also scales naturally to complex mixtures, salt-forming systems, and derivatization strategies. It integrates cleanly with high-throughput experimentation and automated laboratory workflows, making it especially well suited for future hardware and software integration.
+            The method also scales naturally to complex mixtures, salt-forming systems, and derivatization strategies. The white paper describes V1.0 as suitable for API integration with automated screening hardware, electronic lab notebooks, and laboratory informatics systems; V2.0 adds a faster, more user-friendly application workflow.
+          </p>
+
+          <p>
+            The V2.0 interfaces make data validation and result interpretation part of the same workflow: users can review parser diagnostics before fitting, then move from an overview heatmap to detailed composition and solvent-volume behaviour for individual systems.
           </p>
         </section>
 
@@ -590,15 +613,15 @@
           <h2>Conclusion</h2>
 
           <p>
-            CRYSS V1.0 demonstrates that multicomponent crystallization behaviour can be decoded, modelled, and used to guide purification strategy. The results from NODES benchmarking show that even sparse equilibrium data contain enough information to estimate R<sub>max</sub> with high fidelity, and that hybrid Monte Carlo plus optimization strategies deliver strong predictive power.
+            CRYSS V2.0 builds on the V1.0 demonstration that multicomponent crystallization behaviour can be decoded and used to guide purification strategy. NODES benchmarking shows that even sparse equilibrium data can provide useful estimates of R<sub>max</sub>, with stronger agreement as additional solvent-volume slices are included.
           </p>
 
           <p>
-            The methodology is robust, scalable, and experimentally efficient. A single well-constructed equilibrium experiment can often provide a useful estimate of R<sub>max</sub>, and additional solvent volumes sharpen the prediction further. CRYSS therefore offers a practical route to mechanistic insight without imposing heavy experimental overhead.
+            The mechanistic model remains at the heart of the system. V2.0 adds a more capable input parser, interactive validation and results interfaces, and a C++ multithreaded engine reported to cut execution time by around 40-fold. Together these changes make screening more efficient while keeping model inputs and outputs inspectable.
           </p>
 
           <p>
-            Most importantly, CRYSS clarifies the earliest and most consequential stage of crystallization development: selecting which systems deserve attention. By identifying high-yielding solvent and salt-forming conditions before optimization begins, CRYSS ensures that development resources are directed toward the right problems rather than the wrong ones.
+            CRYSS helps identify high-yielding solvent and salt-forming conditions before process optimization begins, so development resources can focus on the systems with the strongest predicted purification potential.
           </p>
         </section>
 
@@ -610,7 +633,7 @@
         </section>
 
         <div class="footnote">
-          This draft is formatted for web presentation and intended to support the downloadable PDF version as a companion document.
+          This web edition summarizes the CRYSS V2.0 white paper. Refer to the downloadable PDF for the full technical discussion and figures.
         </div>
       </div>
     </article>
