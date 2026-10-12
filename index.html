@@ -347,6 +347,10 @@
 <button id="documentation-button" class="flex items-center gap-2 bg-surface-container-highest text-on-surface px-6 py-3 rounded-lg shadow-sm hover:bg-surface-container-high transition-colors border border-slate-200 cursor-pointer" type="button" aria-label="Open CRYSS white paper">
 <span class="material-symbols-outlined text-[20px]">menu_book</span>
 <span class="font-label-caps text-label-caps">White Paper</span>
+</button>
+<button id="presentation-button" class="flex items-center gap-2 bg-surface-container-highest text-on-surface px-6 py-3 rounded-lg shadow-sm hover:bg-surface-container-high transition-colors border border-slate-200 cursor-pointer" type="button" aria-label="Play CRYSS presentation">
+<span class="material-symbols-outlined text-[20px]">slideshow</span>
+<span class="font-label-caps text-label-caps">Presentation</span>
 </button></div><div class="mt-8 flex items-center gap-2 text-on-surface-variant opacity-80 hover:opacity-100 transition-opacity">
 <span class="material-symbols-outlined text-[18px]">mail</span>
 <a class="font-body-sm tracking-wide hover:text-primary transition-colors" href="mailto:cryss@btinternet.com">contact@cryss.co.uk</a>
@@ -455,6 +459,47 @@
     <iframe src="assets/whitepaper.html?v=20261006" title="CRYSS white paper" class="h-[calc(100%-81px)] w-full border-0 bg-white"></iframe>
   </div>
 </div>
+
+<div id="presentation-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4" role="dialog" aria-modal="true" aria-label="CRYSS presentation">
+  <div class="w-full max-w-5xl overflow-hidden rounded-xl bg-black shadow-2xl">
+    <div class="flex items-center justify-between bg-surface-container-low px-5 py-3">
+      <h2 class="font-headline-lg text-headline-lg text-on-surface">CRYSS Presentation</h2>
+      <button id="close-presentation-modal" type="button" class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-white text-on-surface-variant transition-colors hover:bg-surface-container-high" aria-label="Close presentation">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+    </div>
+    <video id="presentation-video" class="block w-full max-h-[80vh] bg-black" controls preload="none" playsinline></video>
+  </div>
+</div>
+
+<script>
+  const presentationModal = document.getElementById('presentation-modal');
+  const presentationVideo = document.getElementById('presentation-video');
+
+  function openPresentation() {
+    presentationVideo.src = 'assets/CRYSS%20Presentation.mp4';
+    presentationModal.classList.remove('hidden');
+    document.body.classList.add('overflow-hidden');
+    presentationVideo.play().catch(function () {});
+  }
+
+  function closePresentation() {
+    presentationVideo.pause();
+    presentationVideo.removeAttribute('src');
+    presentationVideo.load();
+    presentationModal.classList.add('hidden');
+    document.body.classList.remove('overflow-hidden');
+  }
+
+  document.getElementById('presentation-button').addEventListener('click', openPresentation);
+  document.getElementById('close-presentation-modal').addEventListener('click', closePresentation);
+  presentationModal.addEventListener('click', function (event) {
+    if (event.target === presentationModal) closePresentation();
+  });
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && !presentationModal.classList.contains('hidden')) closePresentation();
+  });
+</script>
 
 <script>
   const whitepaperModal = document.getElementById('whitepaper-modal');
