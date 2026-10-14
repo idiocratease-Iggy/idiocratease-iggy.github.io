@@ -7,7 +7,7 @@ CRYSS is built for formulation scientists, purification chemists, and automated 
 This repository hosts the web interface for the CRYSS ecosystem. It contains three major modules:
 
 🧪 NODES – Synthetic Data Generator
-Generates realistic multi‑component equilibrium datasets for solvents, salt‑formers, and compositions. Used for prototyping, training, and validating CRYSS workflows.
+A self-consistent thermodynamic engine giving in silico results from conceptual experiments which can be used to explore the effect of physical properties on purification and test the CRYSS approach as a preamble to real experimentation
 
 📊 CRYSS DOE – Design of Experiments Module
 Builds structured crystallization screens across solvents, salt‑formers, volumes, and component ratios. Exports well‑addressed templates for automated hardware.
@@ -21,7 +21,7 @@ The core analytical engine. Fits mechanistic purification models to real or synt
 
 🔹Solubility behaviour across solvent/salt‑former space
 
-🔹Deviation from ideality
+🔹Absorbs deviation from ideality
 
 🔹Viable vs non‑viable systems
 
@@ -49,9 +49,9 @@ Features:
 
 🔹Multi‑component system definition
 
-🔹Solvent and salt‑former variation
+🔹PhysChem property variation
 
-🔹PCA‑based eutectic distortion modelling
+🔹Eutectic distortion modelling
 
 🔹Analytical noise injection
 
