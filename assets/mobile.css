@@ -1,6 +1,6 @@
 /* Shared mobile/tablet layout: sidebar becomes a swipeable chip bar under the header. */
 @media (max-width: 1024px) {
-  html, body { overflow-x: hidden; }
+  html, body { overflow-x: clip; overflow-y: visible; height: auto; }
 
   body > div > header {
     left: 0 !important;
