@@ -167,7 +167,7 @@
     },
   }
 </script><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"></head><body class="bg-background font-body-md text-on-surface">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><link href="assets/mobile.css" rel="stylesheet"></head><body class="bg-background font-body-md text-on-surface">
 <aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col border-r border-slate-200 shadow-sm">
 <div class="p-6 mb-4 flex items-center gap-3">
 <img alt="CRYSS Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRL8VxNzyzVoaWFWKcZ3mBiBv5UE0HYCXHnWxBTVOLS9cbRqGsYl66Ej9YF8iFjSoL8oXfzM67SoC4cNBBF50I6Iom4hrC8NRPxjT6DEjLKhUZgc6nQL2CcYCYem9YeRUxE0Kkjvr-HAw-KJ1uQBhzKt_wrz5Af-r73gkdp_yqx7tJtve3rp9-477ZavGADPDti60DZiMUbETwIVQoYQ_PjknAT-6-dRqUnhDeQYRKW1nAJJmu36_-AY7rtFwv0Z2P4sk">
@@ -217,7 +217,7 @@
 </div>
 </div><div class="flex items-center justify-between">
 <div>
-<h1 class="font-headline-lg text-headline-lg text-on-surface">Hardware Integation</h1>
+<h1 class="hw-title font-headline-lg text-headline-lg text-on-surface">Hardware Integation</h1>
 <p class="font-body-md text-on-surface-variant">High Fidelity Liquor Assay &amp; Lever Rule: Optimal System Diagnostic</p>
 </div>
 <div class="flex gap-md">
@@ -230,9 +230,9 @@
 </div>
 </div>
 <!-- Main Grid -->
-<div class="grid grid-cols-12 gap-lg flex-1">
+<div class="hw-grid grid grid-cols-12 gap-lg flex-1">
 <!-- Left Panel: Parameters -->
-<div class="col-span-2 flex flex-col gap-lg">
+<div class="hw-left col-span-2 flex flex-col gap-lg">
 <div class="bg-surface rounded-lg border border-outline-variant p-md flex flex-col gap-md">
 <h2 class="font-headline-sm text-headline-sm text-on-surface border-b border-outline-variant pb-sm">Sample Parameters</h2>
 <div class="flex flex-col gap-xs">
@@ -293,7 +293,7 @@
 </div>
 </div>
 <!-- Center Panel: Diagram -->
-<div class="col-span-6 bg-surface rounded-lg border border-outline-variant p-lg flex flex-col items-center relative justify-start overflow-y-auto pt-[64px]" id="workflow-container">
+<div class="hw-diagram col-span-6 bg-surface rounded-lg border border-outline-variant p-lg flex flex-col items-center relative justify-start overflow-y-auto pt-[64px]" id="workflow-container">
 <div class="absolute top-md left-md flex items-center gap-sm bg-surface/80 backdrop-blur-sm px-sm py-xs border border-outline-variant rounded z-10">
 <span class="material-symbols-outlined text-[16px] text-primary">visibility</span>
 <span class="font-code-label text-code-label text-on-surface uppercase">Automated parallel workflow</span>
@@ -321,7 +321,7 @@
 </div>
 </div>
 <!-- Right Panel: Live Data Feed -->
-<div class="col-span-4 bg-inverse-surface rounded-lg border border-outline text-inverse-on-surface flex flex-col overflow-hidden">
+<div class="hw-right col-span-4 bg-inverse-surface rounded-lg border border-outline text-inverse-on-surface flex flex-col overflow-hidden">
 <div class="p-md border-b border-outline bg-inverse-surface/90 flex justify-between items-center shrink-0">
 <h2 class="font-headline-sm text-headline-sm text-inverse-on-surface">Ideal hardware platform for CRYSS integration</h2>
 <div class="flex items-center gap-xs">
@@ -330,11 +330,11 @@
 </div>
 </div>
 <div class="flex flex-col flex-1 overflow-hidden bg-[#1a1e23]">
-<div class="p-md overflow-hidden font-code-data text-code-data text-surface-variant flex flex-col gap-xs shrink-0" style="height: 300px;">
+<div class="hw-telemetry p-md overflow-hidden font-code-data text-code-data text-surface-variant flex flex-col gap-xs shrink-0" style="height: 300px;">
 <h3 class="font-code-label text-code-label text-outline-variant uppercase mb-xs tracking-wider">Recent Activity</h3>
 <div class="flex flex-col gap-1 overflow-hidden flex-1" id="telemetry-log"><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:31:20.844</span><span class="">READ_TEMP: 22.43C</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:31:22.341</span><span class="">READ_TEMP: 22.35C</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:31:29.848</span><span class="">READ_TEMP: 22.36C</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:31:32.848</span><span class="">READ_TEMP: 22.47C</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:31:35.848</span><span class="">CHK_PRESS: 1.056 ATM</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:31:38.848</span><span class="">CHK_PRESS: 1.028 ATM</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:31:49.345</span><span class="">CHK_PRESS: 1.040 ATM</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:31:58.345</span><span class="">CHK_PRESS: 1.030 ATM</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:32:07.345</span><span class="">CHK_PRESS: 1.021 ATM</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:32:08.845</span><span class="">CHK_PRESS: 1.059 ATM</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:32:19.345</span><span class="">IDLE_PING_ACK</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:32:28.349</span><span class="">READ_TEMP: 22.46C</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:32:31.349</span><span class="">IDLE_PING_ACK</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:32:35.853</span><span class="">READ_TEMP: 22.48C</span></div><div class="flex gap-md animate-[fadeIn_0.3s_ease-out] text-code-data font-code-data"><span class="text-outline-variant">17:32:47.848</span><span class="">READ_TEMP: 22.41C</span></div></div>
 </div>
-<div class="w-full flex-1 p-md pt-0 flex items-center justify-center overflow-hidden">
+<div class="hw-photo w-full flex-1 p-md pt-0 flex items-center justify-center overflow-hidden">
 <div class="w-full h-full rounded-lg overflow-hidden border border-outline">
 <img alt="CRYSS Hardware Integration" class="w-full h-full object-cover opacity-90" src="assets/hardware_hires.png">
 </div>

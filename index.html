@@ -57,21 +57,54 @@
         box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04) !important;
       }
 
+      .desktop-sidebar > div:first-child {
+        padding: 6px 14px !important;
+        margin: 0 !important;
+        height: 44px;
+      }
+
+      /* Nav becomes a single horizontally-scrollable row of chips */
       .desktop-sidebar nav {
         display: flex !important;
-        flex-wrap: wrap !important;
+        flex: none !important;
+        flex-wrap: nowrap !important;
+        align-items: center !important;
         gap: 8px !important;
-        padding: 10px 12px 12px !important;
+        padding: 4px 12px 10px !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
       }
 
       .desktop-sidebar nav a {
-        flex: 1 1 calc(50% - 8px) !important;
-        min-width: 136px !important;
+        flex: 0 0 auto !important;
+        margin: 0 !important;
         justify-content: center !important;
-        padding: 10px 12px !important;
+        padding: 8px 14px !important;
+        font-size: 0.875rem !important;
+        white-space: nowrap !important;
       }
 
-      .desktop-sidebar .user-card {
+      .desktop-sidebar nav a .material-symbols-outlined {
+        margin-right: 6px !important;
+        font-size: 20px !important;
+      }
+
+      /* Publications links join the chip row; label and wrapper box disappear */
+      .desktop-sidebar .publications-box {
+        display: contents !important;
+      }
+
+      .desktop-sidebar .publications-box > p {
+        display: none !important;
+      }
+
+      .desktop-sidebar .publications-box > div {
+        display: contents !important;
+      }
+
+      .desktop-sidebar .user-card,
+      .desktop-sidebar .project-box {
         display: none !important;
       }
 
@@ -80,7 +113,7 @@
       }
 
       main {
-        padding-top: 9.5rem !important;
+        padding-top: 10.25rem !important;
       }
     }
 
@@ -89,6 +122,14 @@
         height: 58px !important;
         padding-left: 0.75rem !important;
         padding-right: 0.75rem !important;
+      }
+
+      .desktop-sidebar {
+        top: 58px !important;
+      }
+
+      main {
+        padding-top: 9.75rem !important;
       }
 
       .app-header .header-actions {
@@ -106,6 +147,15 @@
 
       .hero-copy {
         max-width: 100% !important;
+      }
+
+      #badge-license-container,
+      #badge-license-container * {
+        white-space: normal !important;
+      }
+
+      .hero-copy h1 br {
+        display: none;
       }
 
       .hero-copy h1 {
