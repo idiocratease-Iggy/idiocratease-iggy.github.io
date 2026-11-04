@@ -400,9 +400,13 @@
 <span class="material-symbols-outlined text-[20px]">menu_book</span>
 <span class="font-label-caps text-label-caps">White Paper</span>
 </button>
-<button id="presentation-button" class="flex items-center gap-2 bg-[#B72E0C] text-white px-6 py-3 rounded-lg shadow-sm hover:bg-[#9D270A] transition-colors border border-[#B72E0C] hover:border-[#9D270A] cursor-pointer" type="button" aria-label="Play CRYSS presentation">
+<button id="presentation-button" class="flex items-center gap-2 bg-[#B72E0C] text-white px-6 py-3 rounded-lg shadow-sm hover:bg-[#9D270A] transition-colors border border-[#B72E0C] hover:border-[#9D270A] cursor-pointer" type="button" aria-label="Play CRYSS presentation 1">
 <span class="material-symbols-outlined text-[20px]">slideshow</span>
-<span class="font-label-caps text-label-caps">Presentation</span>
+<span class="font-label-caps text-label-caps">Presentation 1</span>
+</button></div><div class="mt-8 flex items-center gap-2 text-on-surface-variant opacity-80 hover:opacity-100 transition-opacity">
+<button id="presentation-button-2" class="flex items-center gap-2 bg-[#B72E0C] text-white px-6 py-3 rounded-lg shadow-sm hover:bg-[#9D270A] transition-colors border border-[#B72E0C] hover:border-[#9D270A] cursor-pointer" type="button" aria-label="Play CRYSS presentation 2">
+<span class="material-symbols-outlined text-[20px]">slideshow</span>
+<span class="font-label-caps text-label-caps">Presentation 2</span>
 </button></div><div class="mt-8 flex items-center gap-2 text-on-surface-variant opacity-80 hover:opacity-100 transition-opacity">
 <span class="material-symbols-outlined text-[18px]">mail</span>
 <a class="font-body-sm tracking-wide hover:text-primary transition-colors" href="mailto:contact@cryss.co.uk">contact@cryss.co.uk</a>
@@ -528,8 +532,8 @@
   const presentationModal = document.getElementById('presentation-modal');
   const presentationVideo = document.getElementById('presentation-video');
 
-  function openPresentation() {
-    presentationVideo.src = 'assets/CRYSS%20Presentation.mp4';
+  function openPresentation(src) {
+    presentationVideo.src = src;
     presentationModal.classList.remove('hidden');
     document.body.classList.add('overflow-hidden');
     presentationVideo.play().catch(function () {});
@@ -543,7 +547,8 @@
     document.body.classList.remove('overflow-hidden');
   }
 
-  document.getElementById('presentation-button').addEventListener('click', openPresentation);
+  document.getElementById('presentation-button').addEventListener('click', function () { openPresentation('assets/CRYSS%20Presentation.mp4'); });
+  document.getElementById('presentation-button-2').addEventListener('click', function () { openPresentation('assets/CRYSS%20Presentation_2.mp4'); });
   document.getElementById('close-presentation-modal').addEventListener('click', closePresentation);
   presentationModal.addEventListener('click', function (event) {
     if (event.target === presentationModal) closePresentation();
