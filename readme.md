@@ -1,4 +1,7 @@
-**CRYSS (Crystallization Screening System)
+-
+CRYSS (Crystallization Screening System)
+
+—
 
 CRYSS is an open‑source software suite for analysing equilibrium behaviour, designing crystallization screens, and converting multi‑solvent datasets into mechanistic purification models. It provides a complete workflow from synthetic data generation to experimental design to final insight extraction.
 
